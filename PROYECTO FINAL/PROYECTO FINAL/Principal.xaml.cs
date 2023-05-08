@@ -10,28 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace PROYECTO_FINAL
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Lógica de interacción para Principal.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Principal : Window
     {
-        public MainWindow()
+        public Principal()
         {
             InitializeComponent();
-        }
-
-        private void video_cargado(object sender, RoutedEventArgs e)
-        {
-            loading.Play();
-        }
-        private void video_terminado(object sender, RoutedEventArgs e)
-        {
-            loading.Position = TimeSpan.FromSeconds(0);
         }
     }
 }

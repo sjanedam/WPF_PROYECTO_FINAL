@@ -1,0 +1,22 @@
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.exe
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.deps.json
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.runtimeconfig.json
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.pdb
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.csproj.AssemblyReference.cache
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL_MarkupCompile.cache
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL_MarkupCompile.lref
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.g.resources
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.AssemblyInfoInputs.cache
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.AssemblyInfo.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.csproj.CoreCompileInputs.cache
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\refint\PROYECTO FINAL.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.pdb
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.genruntimeconfig.cache
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\ref\PROYECTO FINAL.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\loading.gif

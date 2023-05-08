@@ -1,17 +1,12 @@
-﻿<Window x:Class="PROYECTO_FINAL.MainWindow"
+﻿<Window x:Class="PROYECTO_FINAL.Principal"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PROYECTO_FINAL"
         mc:Ignorable="d"
-        Title="ENTRE10TE" Height="900" Width="1600"
-        WindowState="Maximized"
-        WindowStyle="None">
-    <Grid Background="#FFFEFFFA">
-        <MediaElement Source="loading.gif" Margin="554,252,554,252"
-                      x:Name="loading" LoadedBehavior="Manual" MediaEnded="video_terminado">
-        </MediaElement>
-
+        Title="Principal" Height="450" Width="800">
+    <Grid>
+        
     </Grid>
 </Window>
