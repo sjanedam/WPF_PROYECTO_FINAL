@@ -23,5 +23,18 @@ namespace PROYECTO_FINAL
         {
             InitializeComponent();
         }
+
+        private void inicio(object sender, RoutedEventArgs e)
+        {
+            login login = new login();
+            login.Show();
+            this.Close();
+        }
+        private void registro(object sender, RoutedEventArgs e)
+        {
+            registro registro = new registro();
+            registro.Show();
+            this.Close();
+        }
     }
 }

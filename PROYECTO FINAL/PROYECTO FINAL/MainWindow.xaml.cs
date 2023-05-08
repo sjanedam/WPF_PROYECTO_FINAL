@@ -25,13 +25,12 @@ namespace PROYECTO_FINAL
             InitializeComponent();
         }
 
-        private void video_cargado(object sender, RoutedEventArgs e)
-        {
-            loading.Play();
-        }
         private void video_terminado(object sender, RoutedEventArgs e)
         {
-            loading.Position = TimeSpan.FromSeconds(0);
+            Principal principal = new Principal();
+            principal.Show();
+
+            this.Close();
         }
     }
 }

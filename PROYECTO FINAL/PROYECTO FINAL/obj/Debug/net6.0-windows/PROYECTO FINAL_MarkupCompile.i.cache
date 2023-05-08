@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\App.xaml
-21506568506
+4-1109361513
 
-6963316863
+8-170073095
 194101785492
-MainWindow.xaml;Principal.xaml;
+login.xaml;MainWindow.xaml;Principal.xaml;registro.xaml;
 
 True
 

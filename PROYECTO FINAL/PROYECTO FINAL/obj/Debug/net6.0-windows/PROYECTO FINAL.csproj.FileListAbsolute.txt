@@ -20,3 +20,9 @@ C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.genruntimeconfig.cache
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\ref\PROYECTO FINAL.dll
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\loading.gif
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Principal.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Principal.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\login.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\registro.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\login.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\registro.baml

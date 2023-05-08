@@ -1,0 +1,21 @@
+﻿<Window x:Class="PROYECTO_FINAL.registro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROYECTO_FINAL"
+        mc:Ignorable="d"
+        Title="ENTRE10TE" Height="900" Width="1600"
+        WindowState="Maximized"
+        WindowStyle="None">
+    <Grid Background="#FFFFFCE9">
+        <Image x:Name="logo" HorizontalAlignment="Center" Height="231" Margin="0,28,0,0" VerticalAlignment="Top" Width="231" Source="logo.png"/>
+        <Label x:Name="Nombre" Content="ENTRE10TE" HorizontalAlignment="Center" Margin="0,264,0,0" VerticalAlignment="Top" FontSize="100" FontFamily="Multicolore " Background="{x:Null}" Foreground="#FFFF8A23"/>
+
+        <Label Content="© ENTRE10TE - Proyecto final de grado por Jane Orosco Damulog" HorizontalAlignment="Center" Margin="0,809,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
+        <Label Content="Para salir pulse las teclas" HorizontalAlignment="Left" Margin="1393,28,0,0" VerticalAlignment="Top" Width="141" Height="30"/>
+        <Label Content="ALT + ESC" HorizontalAlignment="Left" Margin="1430,43,0,0" VerticalAlignment="Top" Width="67" Height="30"/>
+
+
+    </Grid>
+</Window>

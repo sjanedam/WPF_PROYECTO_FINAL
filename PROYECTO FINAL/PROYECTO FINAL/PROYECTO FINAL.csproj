@@ -10,12 +10,17 @@
 
   <ItemGroup>
     <None Remove="loading.gif" />
+    <None Remove="logo.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="loading.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="logo.png" />
   </ItemGroup>
 
 </Project>
