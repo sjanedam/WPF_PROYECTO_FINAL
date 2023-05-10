@@ -15,9 +15,21 @@
         <Label x:Name="Nombre" Content="ENTRE10TE" HorizontalAlignment="Center" Margin="0,264,0,0" VerticalAlignment="Top"
                FontSize="100" FontFamily="Multicolore " Background="{x:Null}" Foreground="#FFFF8A23"/>
 
+        <!-- Botones para salir de la aplicación -->
+            <!-- Minimizar -->
+        <Button HorizontalAlignment="Left" Margin="1470,15,0,0" VerticalAlignment="Top"
+                Background="Transparent" BorderBrush="#FFFFFCE9" Click="Minimize">
+            <Image Source="media/minimize.png" Height="19" Width="24"></Image>
+        </Button>
+            <!-- Cerrar -->
+        <Button HorizontalAlignment="Left" Margin="1500,15,0,0" VerticalAlignment="Top"
+                Background="Transparent" BorderBrush="#FFFFFCE9" Click="Exit">
+            <Image Source="media/exit.png" Height="19" Width="24"></Image>
+        </Button>
+
         <!-- Botón para entrar sin credenciales -->
         <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="70" Width="572" BorderThickness="1,1,1,1"
-                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,450,0,0">
+                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,450,0,0" Click="Invitado">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="40"></Setter>
@@ -37,7 +49,7 @@
 
         <!-- Botón para iniciar sesión -->
         <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="70" Width="572" BorderThickness="1,1,1,1"
-                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,570,0,0" Click="inicio">
+                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,570,0,0" Click="Inicio">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="40"></Setter>
@@ -57,7 +69,7 @@
 
         <!-- Botón para registrarse -->
         <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="70" Width="572" BorderThickness="1,1,1,1"
-                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,690,0,0" Click="registro">
+                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,690,0,0" Click="Registro">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="40"></Setter>
@@ -79,33 +91,7 @@
         <Label Content="© ENTRE10TE - Proyecto final de grado por Jane Orosco Damulog" HorizontalAlignment="Center"
                Margin="0,825,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
 
-        <Button HorizontalAlignment="Left" Margin="1473,15,0,0" VerticalAlignment="Top">
-            <Image Source="media/minimize.png" Height="19" Width="24"></Image>
-        </Button>
-        <Button HorizontalAlignment="Left" Margin="1500,15,0,0" VerticalAlignment="Top">
-            <Image Source="media/exit.png" Height="19" Width="24"></Image>
-        </Button>
-
-
-        <!-- Salir -->
-
-
-
-        <!-- Botón para salir -->
-
-        <!-- this.WindowState = WindowState.Minimized; -->
-
-        <!-- <Button Name="SALIR" Click="exit" Margin="1437,73,103,761"
-                Background="Transparent" BorderBrush="#FFFFFCE9">
-            <Image Source="/media/exit.png" Height="55" Width="42" OpacityMask="Red"></Image>
-        </Button> -->
-
-        <!-- <Label Content="Para salir pulse las teclas" HorizontalAlignment="Left" Margin="1393,28,0,0"
-               VerticalAlignment="Top" Width="141" Height="30"/> -->
-        <!-- <Label Content="ALT + ESC o pulse en el botón" HorizontalAlignment="Left" Margin="1382,43,0,0" VerticalAlignment="Top"
-               Width="170" Height="30"/> -->
-
-
+       
 
     </Grid>
 </Window>

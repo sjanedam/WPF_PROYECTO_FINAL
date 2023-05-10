@@ -28,16 +28,37 @@ namespace PROYECTO_FINAL
             InitializeComponent();
         }
 
-        private void iniciar(object sender, EventArgs e)
+        private void Iniciar(object sender, RoutedEventArgs e)
         {
-
+            String user = usuario.Text;
+            String password = contra.Password.ToString();
+            if (user.Equals("1234") && password.Equals("123456789"))
+            {
+                Menu menu = new Menu();
+                menu.Show();
+                this.Close();
+            } else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectas, inténtelo de nuevo.", "Error de inicio de sesión", MessageBoxButton.OK, MessageBoxImage.Error);
+                usuario.Clear();
+                contra.Clear();
+            }
         }
 
-        private void registro(object sender, EventArgs e)
+        private void Registro(object sender, RoutedEventArgs e)
         {
             registro registro = new registro();
             registro.Show();
             this.Close();
+        }
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Minimize(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
         }
 
         /*

@@ -12,9 +12,13 @@
     <None Remove="media\account.png" />
     <None Remove="media\exit.png" />
     <None Remove="media\favorite.png" />
+    <None Remove="media\flappymew.png" />
+    <None Remove="media\menu.png" />
     <None Remove="media\minimize.png" />
     <None Remove="media\settings.png" />
+    <None Remove="media\tresenraya.png" />
     <None Remove="media\widgets.png" />
+    <None Remove="media\wordle.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,13 +40,22 @@
     <Resource Include="media\logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="media\menu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="media\minimize.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="media\settings.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="media\tresenraya.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="media\widgets.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\wordle.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

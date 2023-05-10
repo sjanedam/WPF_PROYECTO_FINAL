@@ -23,5 +23,22 @@ namespace PROYECTO_FINAL
         {
             InitializeComponent();
         }
+
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Minimize(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void Iniciar(object sender, RoutedEventArgs e)
+        {
+            login login = new login();
+            login.Show();
+            this.Close();
+        }
     }
 }

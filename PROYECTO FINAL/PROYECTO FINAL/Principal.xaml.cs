@@ -24,22 +24,34 @@ namespace PROYECTO_FINAL
             InitializeComponent();
         }
 
-        private void inicio(object sender, RoutedEventArgs e)
+        private void Invitado(object sender, RoutedEventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Close();
+        }
+
+        private void Inicio(object sender, RoutedEventArgs e)
         {
             login login = new login();
             login.Show();
             this.Close();
         }
-        private void registro(object sender, RoutedEventArgs e)
+        private void Registro(object sender, RoutedEventArgs e)
         {
             registro registro = new registro();
             registro.Show();
             this.Close();
         }
 
-        private void exit(object sender, RoutedEventArgs e)
+        private void Exit(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Minimize(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
         }
     }
 }

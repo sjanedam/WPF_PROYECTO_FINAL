@@ -11,19 +11,25 @@
     <Grid Background="#FFFFFCE9">
         <!-- Logo y nombre de la empresa -->
         <Image x:Name="logo" HorizontalAlignment="Center" Height="231" Margin="0,28,0,0" VerticalAlignment="Top"
-               Width="231" Source="/logo.png"/>
+               Width="231" Source="media/logo.png"/>
         <Label x:Name="Nombre" Content="ENTRE10TE" HorizontalAlignment="Center" Margin="0,264,0,0" VerticalAlignment="Top"
                FontSize="100" FontFamily="Multicolore " Background="{x:Null}" Foreground="#FFFF8A23"/>
+
+        <!-- Botones para salir de la aplicación -->
+            <!-- Minimizar -->
+        <Button HorizontalAlignment="Left" Margin="1470,15,0,0" VerticalAlignment="Top"
+                Background="Transparent" BorderBrush="#FFFFFCE9" Click="Minimize">
+            <Image Source="media/minimize.png" Height="19" Width="24"></Image>
+        </Button>
+            <!-- Cerrar -->
+        <Button HorizontalAlignment="Left" Margin="1500,15,0,0" VerticalAlignment="Top"
+                Background="Transparent" BorderBrush="#FFFFFCE9" Click="Exit">
+            <Image Source="media/exit.png" Height="19" Width="24"></Image>
+        </Button>
 
         <!-- Pie de página Copyright -->
         <Label Content="© ENTRE10TE - Proyecto final de grado por Jane Orosco Damulog" HorizontalAlignment="Center"
                Margin="0,825,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
-
-        <!-- Instrucciones para salir -->
-        <Label Content="Para salir pulse las teclas" HorizontalAlignment="Left" Margin="1393,28,0,0" VerticalAlignment="Top"
-               Width="141" Height="30"/>
-        <Label Content="ALT + ESC" HorizontalAlignment="Left" Margin="1430,43,0,0" VerticalAlignment="Top" Width="67"
-               Height="30"/>
 
         <!-- Registro -->
         <Label Content="Registrarse" HorizontalAlignment="Center" Margin="0,397,0,0" VerticalAlignment="Top" FontSize="50"
@@ -60,7 +66,7 @@
         <!-- Botón de inicio de sesión -->
         <Button HorizontalAlignment="Center" Margin="0,771,0,0" VerticalAlignment="Top" Background="#FFFFFCE9"
                 BorderThickness="1" BorderBrush="#FFFFFCE9" FontFamily="Multicolore" Foreground="#FFFF6F00"
-                FontSize="20" Content="Iniciar sesión" Padding="10,5,10,5">
+                FontSize="20" Content="Iniciar sesión" Padding="10,5,10,5" Click="Iniciar">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"></Setter>
