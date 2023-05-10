@@ -9,18 +9,42 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="loading.gif" />
-    <None Remove="logo.png" />
+    <None Remove="media\account.png" />
+    <None Remove="media\exit.png" />
+    <None Remove="media\favorite.png" />
+    <None Remove="media\minimize.png" />
+    <None Remove="media\settings.png" />
+    <None Remove="media\widgets.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="loading.gif">
+    <EmbeddedResource Include="media\loading.gif">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="logo.png" />
+    <Resource Include="media\account.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\exit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\favorite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\minimize.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\settings.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="media\widgets.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

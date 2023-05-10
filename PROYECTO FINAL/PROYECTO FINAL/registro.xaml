@@ -9,13 +9,65 @@
         WindowState="Maximized"
         WindowStyle="None">
     <Grid Background="#FFFFFCE9">
-        <Image x:Name="logo" HorizontalAlignment="Center" Height="231" Margin="0,28,0,0" VerticalAlignment="Top" Width="231" Source="logo.png"/>
-        <Label x:Name="Nombre" Content="ENTRE10TE" HorizontalAlignment="Center" Margin="0,264,0,0" VerticalAlignment="Top" FontSize="100" FontFamily="Multicolore " Background="{x:Null}" Foreground="#FFFF8A23"/>
+        <!-- Logo y nombre de la empresa -->
+        <Image x:Name="logo" HorizontalAlignment="Center" Height="231" Margin="0,28,0,0" VerticalAlignment="Top"
+               Width="231" Source="/logo.png"/>
+        <Label x:Name="Nombre" Content="ENTRE10TE" HorizontalAlignment="Center" Margin="0,264,0,0" VerticalAlignment="Top"
+               FontSize="100" FontFamily="Multicolore " Background="{x:Null}" Foreground="#FFFF8A23"/>
 
-        <Label Content="© ENTRE10TE - Proyecto final de grado por Jane Orosco Damulog" HorizontalAlignment="Center" Margin="0,809,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
-        <Label Content="Para salir pulse las teclas" HorizontalAlignment="Left" Margin="1393,28,0,0" VerticalAlignment="Top" Width="141" Height="30"/>
-        <Label Content="ALT + ESC" HorizontalAlignment="Left" Margin="1430,43,0,0" VerticalAlignment="Top" Width="67" Height="30"/>
+        <!-- Pie de página Copyright -->
+        <Label Content="© ENTRE10TE - Proyecto final de grado por Jane Orosco Damulog" HorizontalAlignment="Center"
+               Margin="0,825,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
 
+        <!-- Instrucciones para salir -->
+        <Label Content="Para salir pulse las teclas" HorizontalAlignment="Left" Margin="1393,28,0,0" VerticalAlignment="Top"
+               Width="141" Height="30"/>
+        <Label Content="ALT + ESC" HorizontalAlignment="Left" Margin="1430,43,0,0" VerticalAlignment="Top" Width="67"
+               Height="30"/>
+
+        <!-- Registro -->
+        <Label Content="Registrarse" HorizontalAlignment="Center" Margin="0,397,0,0" VerticalAlignment="Top" FontSize="50"
+               FontFamily="Multicolore "/>
+        <!-- Usuario -->
+        <Label Content="Usuario" HorizontalAlignment="Center" Margin="0,472,0,0" VerticalAlignment="Top"
+               FontFamily="Multicolore" FontSize="20" Height="32" Width="104"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,508,0,0" VerticalAlignment="Top" Width="250" Height="38"
+                 FontSize="25"/>
+        <!-- Contraseña -->
+        <Label Content="Contraseña" HorizontalAlignment="Center" Margin="0,552,0,0" VerticalAlignment="Top"
+               FontFamily="Multicolore" FontSize="20" Height="31" Width="152"/>
+        <PasswordBox HorizontalAlignment="Center" Margin="0,588,0,0"  VerticalAlignment="Top" Width="252" Height="37"
+                     FontSize="25" />
+        <Label Content="Confirmar contraseña" HorizontalAlignment="Center" Margin="0,626,0,0" VerticalAlignment="Top"
+            FontFamily="Multicolore" FontSize="20" Height="31" Width="280"/>
+        <PasswordBox HorizontalAlignment="Center" Margin="0,662,0,0"  VerticalAlignment="Top" Width="252" Height="37"
+            FontSize="25" />
+        <!-- Botón para registrarse -->
+        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="251" BorderThickness="1,1,1,1"
+                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,713,0,0"
+                BorderBrush="#FFFFFCE9">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"></Setter>
+                </Style>
+            </Button.Resources>
+            <StackPanel Orientation="Vertical">
+                <TextBlock FontFamily="Multicolore" FontSize="25" TextAlignment="Center" Height="30" Width="201">
+                    <Run Language="es-es" Text="Registrarse" Foreground="White"/>
+                </TextBlock>
+            </StackPanel>
+        </Button>
+        <!-- Botón de inicio de sesión -->
+        <Button HorizontalAlignment="Center" Margin="0,771,0,0" VerticalAlignment="Top" Background="#FFFFFCE9"
+                BorderThickness="1" BorderBrush="#FFFFFCE9" FontFamily="Multicolore" Foreground="#FFFF6F00"
+                FontSize="20" Content="Iniciar sesión" Padding="10,5,10,5">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        
 
     </Grid>
 </Window>

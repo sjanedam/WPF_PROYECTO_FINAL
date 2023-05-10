@@ -36,5 +36,10 @@ namespace PROYECTO_FINAL
             registro.Show();
             this.Close();
         }
+
+        private void exit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

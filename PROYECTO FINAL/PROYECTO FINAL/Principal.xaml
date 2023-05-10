@@ -9,17 +9,23 @@
         WindowState="Maximized"
         WindowStyle="None">
     <Grid Background="#FFFFFCE9">
-        <Image x:Name="logo" HorizontalAlignment="Center" Height="231" Margin="0,28,0,0" VerticalAlignment="Top" Width="231" Source="logo.png"/>
-        <Label x:Name="Nombre" Content="ENTRE10TE" HorizontalAlignment="Center" Margin="0,264,0,0" VerticalAlignment="Top" FontSize="100" FontFamily="Multicolore " Background="{x:Null}" Foreground="#FFFF8A23"/>
+        <!-- Logo y nombre de la empresa -->
+        <Image x:Name="logo" HorizontalAlignment="Center" Height="231" Margin="0,28,0,0" VerticalAlignment="Top"
+               Width="231" Source="media/logo.png"/>
+        <Label x:Name="Nombre" Content="ENTRE10TE" HorizontalAlignment="Center" Margin="0,264,0,0" VerticalAlignment="Top"
+               FontSize="100" FontFamily="Multicolore " Background="{x:Null}" Foreground="#FFFF8A23"/>
 
-        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="70" Width="572" BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,450,0,0">
+        <!-- Botón para entrar sin credenciales -->
+        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="70" Width="572" BorderThickness="1,1,1,1"
+                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,450,0,0">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="40"></Setter>
                 </Style>
             </Button.Resources>
             <StackPanel Orientation="Vertical">
-                <TextBlock FontFamily="Multicolore" FontSize="40" TextAlignment="Center" Height="45" HorizontalAlignment="Center" Width="484">
+                <TextBlock FontFamily="Multicolore" FontSize="40" TextAlignment="Center" Height="45"
+                           HorizontalAlignment="Center" Width="484">
                     <TextBlock.Foreground>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="white"/>
@@ -28,14 +34,18 @@
                     </TextBlock.Foreground><Run Language="es-es" Text="Jugar como invitado"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="70" Width="572" BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,570,0,0" Click="inicio">
+
+        <!-- Botón para iniciar sesión -->
+        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="70" Width="572" BorderThickness="1,1,1,1"
+                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,570,0,0" Click="inicio">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="40"></Setter>
                 </Style>
             </Button.Resources>
             <StackPanel Orientation="Vertical">
-                <TextBlock FontFamily="Multicolore" FontSize="40" TextAlignment="Center" Height="45" HorizontalAlignment="Center" Width="580">
+                <TextBlock FontFamily="Multicolore" FontSize="40" TextAlignment="Center" Height="45"
+                           HorizontalAlignment="Center" Width="580">
                     <TextBlock.Foreground>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="white"/>
@@ -44,14 +54,18 @@
                     </TextBlock.Foreground><Run Language="es-es" Text="Iniciar sesión"/></TextBlock>
             </StackPanel>
         </Button>
-        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="70" Width="572" BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,690,0,0" Click="registro">
+
+        <!-- Botón para registrarse -->
+        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="70" Width="572" BorderThickness="1,1,1,1"
+                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,690,0,0" Click="registro">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="40"></Setter>
                 </Style>
             </Button.Resources>
             <StackPanel Orientation="Vertical">
-                <TextBlock FontFamily="Multicolore" FontSize="40" TextAlignment="Center" Height="45" HorizontalAlignment="Center" Width="580">
+                <TextBlock FontFamily="Multicolore" FontSize="40" TextAlignment="Center" Height="45"
+                           HorizontalAlignment="Center" Width="580">
                     <TextBlock.Foreground>
                         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                             <GradientStop Color="white"/>
@@ -60,9 +74,38 @@
                     </TextBlock.Foreground><Run Language="es-es" Text="Registrarse"/></TextBlock>
             </StackPanel>
         </Button>
-        <Label Content="© ENTRE10TE - Proyecto final de grado por Jane Orosco Damulog" HorizontalAlignment="Center" Margin="0,809,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
-        <Label Content="Para salir pulse las teclas" HorizontalAlignment="Left" Margin="1393,28,0,0" VerticalAlignment="Top" Width="141" Height="30"/>
-        <Label Content="ALT + ESC" HorizontalAlignment="Left" Margin="1430,43,0,0" VerticalAlignment="Top" Width="67" Height="30"/>
+
+        <!-- Pie de página, copyright -->
+        <Label Content="© ENTRE10TE - Proyecto final de grado por Jane Orosco Damulog" HorizontalAlignment="Center"
+               Margin="0,825,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
+
+        <Button HorizontalAlignment="Left" Margin="1473,15,0,0" VerticalAlignment="Top">
+            <Image Source="media/minimize.png" Height="19" Width="24"></Image>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="1500,15,0,0" VerticalAlignment="Top">
+            <Image Source="media/exit.png" Height="19" Width="24"></Image>
+        </Button>
+
+
+        <!-- Salir -->
+
+
+
+        <!-- Botón para salir -->
+
+        <!-- this.WindowState = WindowState.Minimized; -->
+
+        <!-- <Button Name="SALIR" Click="exit" Margin="1437,73,103,761"
+                Background="Transparent" BorderBrush="#FFFFFCE9">
+            <Image Source="/media/exit.png" Height="55" Width="42" OpacityMask="Red"></Image>
+        </Button> -->
+
+        <!-- <Label Content="Para salir pulse las teclas" HorizontalAlignment="Left" Margin="1393,28,0,0"
+               VerticalAlignment="Top" Width="141" Height="30"/> -->
+        <!-- <Label Content="ALT + ESC o pulse en el botón" HorizontalAlignment="Left" Margin="1382,43,0,0" VerticalAlignment="Top"
+               Width="170" Height="30"/> -->
+
+
 
     </Grid>
 </Window>

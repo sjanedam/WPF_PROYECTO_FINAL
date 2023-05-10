@@ -9,7 +9,7 @@
         WindowState="Maximized"
         WindowStyle="None">
     <Grid Background="#FFFEFFFA">
-        <MediaElement Source="loading.gif" Margin="554,252,554,252"
+        <MediaElement Source="media/loading.gif" Margin="554,252,554,252"
                       x:Name="loading" MediaEnded="video_terminado">
         </MediaElement>
 

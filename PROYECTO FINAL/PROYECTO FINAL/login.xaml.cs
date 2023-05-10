@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 using Console = System.Console;
-using Microsoft.Data.Odbc;
+//using Microsoft.Data.Odbc;
 
 namespace PROYECTO_FINAL
 {
@@ -33,6 +33,14 @@ namespace PROYECTO_FINAL
 
         }
 
+        private void registro(object sender, EventArgs e)
+        {
+            registro registro = new registro();
+            registro.Show();
+            this.Close();
+        }
+
+        /*
         static void Main(string[] args)
         {
             try
@@ -146,6 +154,6 @@ namespace PROYECTO_FINAL
                                   MyOdbcException.Errors[i].SQLState + "\n");
                 }
             }
-        }
+        }*/
     }
 }
