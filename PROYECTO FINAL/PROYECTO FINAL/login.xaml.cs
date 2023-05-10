@@ -40,9 +40,9 @@ namespace PROYECTO_FINAL
                 //Connection string for Connector/ODBC 3.51
                 string MyConString = "DRIVER={MySQL ODBC 3.51 Driver};" +
                   "SERVER=localhost;" +
-                  "DATABASE=test;" +
-                  "UID=venu;" +
-                  "PASSWORD=venu;" +
+                  "DATABASE=profi_bbdd;" +
+                  "UID=wpf_sjod;" +
+                  "PASSWORD=123456789;" +
                   "OPTION=3";
 
                 //Connect to MySQL using Connector/ODBC
