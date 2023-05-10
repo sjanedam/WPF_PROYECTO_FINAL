@@ -7,10 +7,31 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ajustes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="favoritos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="juegos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Menu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="perfil.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="preview_flappymew.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="preview_tictactoe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="preview_wordle.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Principal.xaml.cs">
@@ -21,6 +42,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="ajustes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="favoritos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="juegos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="login.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -28,6 +58,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Menu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="perfil.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="preview_flappymew.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="preview_tictactoe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="preview_wordle.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Principal.xaml">

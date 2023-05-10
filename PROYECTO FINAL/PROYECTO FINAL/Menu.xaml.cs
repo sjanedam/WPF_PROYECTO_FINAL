@@ -33,6 +33,55 @@ namespace PROYECTO_FINAL
             this.WindowState = WindowState.Minimized;
         }
 
+        private void Preview_tictactoe(object sender, RoutedEventArgs e)
+        {
+            preview_tictactoe tictactoe = new preview_tictactoe();
+            tictactoe.Show();
+            this.Close();
+        }
+
+        private void Preview_wordle(object sender, RoutedEventArgs e)
+        {
+            preview_wordle wordle = new preview_wordle();
+            wordle.Show();
+            this.Close();
+        }
+
+        private void Preview_flappymew(object sender, RoutedEventArgs e)
+        {
+            preview_flappymew flappymew = new preview_flappymew();
+            flappymew.Show();
+            this.Close();
+        }
+
+        private void Abrir_perfil(object sender, RoutedEventArgs e)
+        {
+            perfil perfil = new perfil();
+            perfil.Show();
+            this.Close();
+        }
+
+        private void Abrir_juegos(object sender, RoutedEventArgs e)
+        {
+            juegos juegos = new juegos();
+            juegos.Show();
+            this.Close();
+        }
+
+        private void Abrir_favoritos(object sender, RoutedEventArgs e)
+        {
+            favoritos favoritos = new favoritos();
+            favoritos.Show();
+            this.Close();
+        }
+
+        private void Abrir_ajustes(object sender, RoutedEventArgs e)
+        {
+            ajustes ajustes = new ajustes();
+            ajustes.Show();
+            this.Close();
+        }
+
         private void ListViewItem_MouseEnter(object sender, MouseEventArgs e)
         {
             // Set tooltip visibility

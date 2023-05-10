@@ -92,9 +92,10 @@
             <Rectangle HorizontalAlignment="Left" Height="7" Margin="150,260,0,0" Fill="#FFFF8A23" VerticalAlignment="Top" Width="100"/>
 
             <!-- JUEGOS -->
-            <!-- Juego 1-->
+                <!-- Juego 1-->
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="500" Width="400" Margin="100,305,0,0" Foreground="Red"
-                    BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White">
+                    BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White"
+                    Click="Preview_tictactoe">
                 <StackPanel Orientation="Vertical">
                     <Image Source="media/tresenraya.png"/>
                     <Label Content="2 jugadores" FontFamily="Multicolore" FontSize="15"/>
@@ -102,9 +103,10 @@
                 </StackPanel>
             </Button>
 
-            <!-- Juego 2 -->
+                <!-- Juego 2 -->
             <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="500" Width="400" Margin="0,305,0,0" Foreground="Red"
-                    BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White">
+                    BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White"
+                    Click="Preview_wordle">
                 <StackPanel Orientation="Vertical">
                     <Image Source="media/wordle.png"/>
                     <Label Content="1 jugador" FontFamily="Multicolore" FontSize="15"/>
@@ -112,9 +114,10 @@
                 </StackPanel>
             </Button>
 
-            <!-- Juego 3 -->
+                <!-- Juego 3 -->
             <Button HorizontalAlignment="Right" VerticalAlignment="Top" Height="500" Width="400" Margin="0,305,100,0" Foreground="Red"
-                    BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White">
+                    BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White"
+                    Click="Preview_flappymew">
                 <StackPanel Orientation="Vertical">
                     <Image Source="media/flappymew.png"/>
                     <Label Content="1 jugador" FontFamily="Multicolore" FontSize="15"/>

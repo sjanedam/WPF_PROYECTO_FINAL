@@ -28,3 +28,9 @@ C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\media\loading.gif
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Menu.g.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Menu.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_flappymew.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_tictactoe.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_wordle.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_flappymew.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_tictactoe.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_wordle.baml

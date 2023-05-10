@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\App.xaml
-5-1324615163
+1284312853
 
-92133064251
+16-1114563379
 194101785492
-login.xaml;MainWindow.xaml;Menu.xaml;Principal.xaml;registro.xaml;
+ajustes.xaml;favoritos.xaml;juegos.xaml;login.xaml;MainWindow.xaml;Menu.xaml;perfil.xaml;preview_flappymew.xaml;preview_tictactoe.xaml;preview_wordle.xaml;Principal.xaml;registro.xaml;
 
-False
+True
 
