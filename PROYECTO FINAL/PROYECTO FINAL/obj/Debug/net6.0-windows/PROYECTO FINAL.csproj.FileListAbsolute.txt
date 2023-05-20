@@ -1,36 +1,67 @@
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\media\loading.gif
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.exe
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.deps.json
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.runtimeconfig.json
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.dll
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.pdb
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\System.Data.Odbc.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\System.Text.Encoding.CodePages.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\freebsd\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\linux\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\osx\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.csproj.AssemblyReference.cache
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\ajustes.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\favoritos.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\juegos.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\login.g.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Menu.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\perfil.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_flappymew.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_tictactoe.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_wordle.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Principal.g.cs
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\registro.g.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL_MarkupCompile.cache
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL_MarkupCompile.lref
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\ajustes.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\favoritos.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\juegos.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\login.baml
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Menu.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\perfil.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_flappymew.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_tictactoe.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_wordle.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Principal.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\registro.baml
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.g.resources
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.AssemblyInfoInputs.cache
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.AssemblyInfo.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.csproj.CoreCompileInputs.cache
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.csproj.CopyComplete
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.dll
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\refint\PROYECTO FINAL.dll
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.pdb
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.deps.json
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.runtimeconfig.json
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\PROYECTO FINAL.pdb
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.genruntimeconfig.cache
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\ref\PROYECTO FINAL.dll
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Principal.g.cs
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Principal.baml
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\login.g.cs
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\registro.g.cs
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\login.baml
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\registro.baml
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\media\loading.gif
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Menu.g.cs
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Menu.baml
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_flappymew.g.cs
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_tictactoe.g.cs
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_wordle.g.cs
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_flappymew.baml
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_tictactoe.baml
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_wordle.baml
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\System.IO.Pipelines.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

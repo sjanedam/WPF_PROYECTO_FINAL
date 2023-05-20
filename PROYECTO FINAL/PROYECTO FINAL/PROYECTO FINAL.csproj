@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="flappymew.png" />
     <None Remove="media\account.png" />
     <None Remove="media\exit.png" />
     <None Remove="media\favorite.png" />
@@ -28,6 +29,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.33" />
+    <PackageReference Include="System.Data.Odbc" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="flappymew.png" />
     <Resource Include="media\account.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

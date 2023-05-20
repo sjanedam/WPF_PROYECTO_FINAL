@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PROYECTO_FINAL"
         mc:Ignorable="d"
-        Title="preview_flappymew" Height="450" Width="800">
-    <Grid>
-        
+        Title="ENTRE10TE" Height="900" Width="1600"
+        WindowState="Maximized"
+        WindowStyle="None">
+    <Grid Background="#FFFFFCE9">
+        <!-- Botones para salir de la aplicación -->
+        <!-- Minimizar -->
+        <Button HorizontalAlignment="Left" Margin="1470,15,0,0" VerticalAlignment="Top"
+                Background="Transparent" BorderBrush="#FFFFFCE9" Click="Minimize">
+            <Image Source="media/minimize.png" Height="19" Width="24"></Image>
+        </Button>
+        <!-- Cerrar -->
+        <Button HorizontalAlignment="Left" Margin="1500,15,0,0" VerticalAlignment="Top"
+                Background="Transparent" BorderBrush="#FFFFFCE9" Click="Exit">
+            <Image Source="media/exit.png" Height="19" Width="24"></Image>
+        </Button>
+
     </Grid>
 </Window>

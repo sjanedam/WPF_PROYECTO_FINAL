@@ -99,7 +99,7 @@
                 <StackPanel Orientation="Vertical">
                     <Image Source="media/tresenraya.png"/>
                     <Label Content="2 jugadores" FontFamily="Multicolore" FontSize="15"/>
-                    <Label Content="Tic Tac Toe" FontFamily="Multicolore" FontSize="30"/>
+                    <Label Content="Tic Tac Toe (3 en raya)" FontFamily="Multicolore" FontSize="28"/>
                 </StackPanel>
             </Button>
 
@@ -110,7 +110,7 @@
                 <StackPanel Orientation="Vertical">
                     <Image Source="media/wordle.png"/>
                     <Label Content="1 jugador" FontFamily="Multicolore" FontSize="15"/>
-                    <Label Content="Wordle" FontFamily="Multicolore" FontSize="30"/>
+                    <Label Content="Wordle" FontFamily="Multicolore" FontSize="28"/>
                 </StackPanel>
             </Button>
 
@@ -119,9 +119,9 @@
                     BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White"
                     Click="Preview_flappymew">
                 <StackPanel Orientation="Vertical">
-                    <Image Source="media/flappymew.png"/>
+                    <Image Source="/flappymew.png"/>
                     <Label Content="1 jugador" FontFamily="Multicolore" FontSize="15"/>
-                    <Label Content="Wordle" FontFamily="Multicolore" FontSize="30"/>
+                    <Label Content="Flappy Mew" FontFamily="Multicolore" FontSize="28"/>
                 </StackPanel>
             </Button>
 
