@@ -19,10 +19,39 @@ namespace PROYECTO_FINAL
     /// </summary>
     public partial class preview_wordle : Window
     {
+        List<String> datos = new List<string>();
+        AdminDB admin = new AdminDB();
+
         public preview_wordle()
         {
-            InitializeComponent();
+            datos = admin.Comprobar_juego("Wordle", datos);
+
+            if (datos.Any())
+            {
+                String nom = datos.ElementAt(0).ToString();
+                String desc = datos.ElementAt(1).ToString();
+                String dif = datos.ElementAt(2).ToString();
+                String tipo = datos.ElementAt(3).ToString();
+
+                InitializeComponent();
+
+                Nombre.Content = nom.ToString();
+                Descripcion.Text = desc.ToString();
+                Dificultad.Content = dif.ToString();
+                Tipo.Content = tipo.ToString();
+            }
+            else
+            {
+                InitializeComponent();
+            }
         }
+        public void Jugar_wordle(object sender, RoutedEventArgs e)
+        {
+            juego_wordle wordle = new juego_wordle();
+            wordle.Show();
+            this.Close();
+        }
+
         private void Exit(object sender, RoutedEventArgs e)
         {
             this.Close();

@@ -98,8 +98,8 @@
                     Click="Preview_tictactoe">
                 <StackPanel Orientation="Vertical">
                     <Image Source="media/tresenraya.png"/>
-                    <Label Content="2 jugadores" FontFamily="Multicolore" FontSize="15"/>
-                    <Label Content="Tic Tac Toe (3 en raya)" FontFamily="Multicolore" FontSize="28"/>
+                    <Label Content="x" FontFamily="Multicolore" FontSize="15" x:Name="tipo3en"/>
+                    <Label Content="Nombre" FontFamily="Multicolore" FontSize="28" x:Name="nombre3en"/>
                 </StackPanel>
             </Button>
 
@@ -109,8 +109,8 @@
                     Click="Preview_wordle">
                 <StackPanel Orientation="Vertical">
                     <Image Source="media/wordle.png"/>
-                    <Label Content="1 jugador" FontFamily="Multicolore" FontSize="15"/>
-                    <Label Content="Wordle" FontFamily="Multicolore" FontSize="28"/>
+                    <Label Content="X" FontFamily="Multicolore" FontSize="15" x:Name="tipoWord"/>
+                    <Label Content="Nombre" FontFamily="Multicolore" FontSize="28" x:Name="nombreWord"/>
                 </StackPanel>
             </Button>
 
@@ -120,8 +120,8 @@
                     Click="Preview_flappymew">
                 <StackPanel Orientation="Vertical">
                     <Image Source="/flappymew.png"/>
-                    <Label Content="1 jugador" FontFamily="Multicolore" FontSize="15"/>
-                    <Label Content="Flappy Mew" FontFamily="Multicolore" FontSize="28"/>
+                    <Label Content="x" FontFamily="Multicolore" FontSize="15" x:Name="tipoMew"/>
+                    <Label Content="Nombre" FontFamily="Multicolore" FontSize="28" x:Name="nombreMew"/>
                 </StackPanel>
             </Button>
 
@@ -181,7 +181,7 @@
                                ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
                         <!-- Perfil -->
-                        <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter">
+                        <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter" MouseDoubleClick="Abrir_perfil">
                             <StackPanel Orientation="Horizontal" Width="230">
                                 <Image Source="media/account.png" Stretch="None" Margin="0,0,0,0"/>
                                 <TextBlock Text="Perfil" Margin="25,0,0,0" Style="{StaticResource font_style}"/>
@@ -195,7 +195,7 @@
                         </ListViewItem>
 
                         <!-- Juegos -->
-                        <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter">
+                        <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter" MouseDoubleClick="Abrir_juegos">
                             <StackPanel Orientation="Horizontal" Width="230">
                                 <Image Source="media/widgets.png" Stretch="None" Margin="0,0,0,0"/>
                                 <TextBlock Text="Juegos" Margin="25,0,0,0" Style="{StaticResource font_style}"/>
@@ -207,7 +207,7 @@
                         </ListViewItem>
 
                         <!-- Favoritos -->
-                        <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter">
+                        <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter" MouseDoubleClick="Abrir_favoritos">
                             <StackPanel Orientation="Horizontal" Width="230">
                                 <Image Source="media/favorite.png" Stretch="None" Margin="0,0,0,0"/>
                                 <TextBlock Text="Favoritos" Margin="25,0,0,0" Style="{StaticResource font_style}"/>
@@ -219,7 +219,7 @@
                         </ListViewItem>
 
                         <!-- Ajustes -->
-                        <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter">
+                        <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter" MouseDoubleClick="Abrir_ajustes">
                             <StackPanel Orientation="Horizontal" Width="230">
                                 <Image Source="media/settings.png" Stretch="None" Margin="0,0,0,0"/>
                                 <TextBlock Text="Ajustes" Margin="25,0,0,0" Style="{StaticResource font_style}"/>

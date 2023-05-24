@@ -30,5 +30,13 @@ namespace PROYECTO_FINAL
             this.nombre_usuario = nombre_usuario;
             this.contra = contra;
         }
+
+        public User() { }
+
+        public User(String user, String password)
+        {
+            this.nombre_usuario = user;
+            this.contra = password;
+        }
     }
 }

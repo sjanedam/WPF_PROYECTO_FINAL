@@ -40,5 +40,27 @@ namespace PROYECTO_FINAL
             login.Show();
             this.Close();
         }
+
+        private void Registrarse(object sender, RoutedEventArgs e)
+        {
+            string user = usuario.Text.ToString();
+            string contra = pass.Password.ToString();
+            string conficontra = password.Password.ToString();
+
+            if (contra.Equals(conficontra))
+            {
+                AdminDB admin = new AdminDB();
+
+                if (admin.Insertar_usuario(user, contra))
+                {
+                    Menu menu = new Menu();
+                    menu.Show();
+                    this.Close();
+                }
+            } else
+            {
+                MessageBox.Show("Las contraseñas deben de ser iguales", "Error al registrarse", MessageBoxButton.OK);
+            }
+        }
     }
 }

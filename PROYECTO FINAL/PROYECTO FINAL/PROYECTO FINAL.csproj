@@ -6,10 +6,13 @@
     <RootNamespace>PROYECTO_FINAL</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>media\logo.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="favorito.png" />
     <None Remove="flappymew.png" />
+    <None Remove="logo.png" />
     <None Remove="media\account.png" />
     <None Remove="media\exit.png" />
     <None Remove="media\favorite.png" />
@@ -20,6 +23,10 @@
     <None Remove="media\tresenraya.png" />
     <None Remove="media\widgets.png" />
     <None Remove="media\wordle.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="media\logo.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,7 +41,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="favorito.png" />
     <Resource Include="flappymew.png" />
+    <Resource Include="logo.png" />
     <Resource Include="media\account.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

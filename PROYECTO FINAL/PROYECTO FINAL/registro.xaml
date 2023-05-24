@@ -38,20 +38,20 @@
         <Label Content="Usuario" HorizontalAlignment="Center" Margin="0,472,0,0" VerticalAlignment="Top"
                FontFamily="Multicolore" FontSize="20" Height="32" Width="104"/>
         <TextBox HorizontalAlignment="Center" Margin="0,508,0,0" VerticalAlignment="Top" Width="250" Height="38"
-                 FontSize="25"/>
+                 FontSize="25" x:Name="usuario"/>
         <!-- Contraseña -->
         <Label Content="Contraseña" HorizontalAlignment="Center" Margin="0,552,0,0" VerticalAlignment="Top"
                FontFamily="Multicolore" FontSize="20" Height="31" Width="152"/>
         <PasswordBox HorizontalAlignment="Center" Margin="0,588,0,0"  VerticalAlignment="Top" Width="252" Height="37"
-                     FontSize="25" />
+                     FontSize="25" x:Name="pass"/>
         <Label Content="Confirmar contraseña" HorizontalAlignment="Center" Margin="0,626,0,0" VerticalAlignment="Top"
             FontFamily="Multicolore" FontSize="20" Height="31" Width="280"/>
         <PasswordBox HorizontalAlignment="Center" Margin="0,662,0,0"  VerticalAlignment="Top" Width="252" Height="37"
-            FontSize="25" />
+            FontSize="25" x:Name="password"/>
         <!-- Botón para registrarse -->
         <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="251" BorderThickness="1,1,1,1"
                 Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,713,0,0"
-                BorderBrush="#FFFFFCE9">
+                BorderBrush="#FFFFFCE9" Click="Registrarse">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="30"></Setter>

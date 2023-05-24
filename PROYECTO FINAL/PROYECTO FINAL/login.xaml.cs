@@ -33,25 +33,13 @@ namespace PROYECTO_FINAL
             String user = usuario.Text;
             String password = contra.Password.ToString();
 
-            List<User> listaUsuarios = gestion.Generar_usuarios();
-
-            for (int i = 0; i < listaUsuarios.Count; i++)
+            if (gestion.Comprobar_usuario(user, password))
             {
-                if (user.Equals(listaUsuarios.ElementAt(i).nombre_usuario)
-                    && password.Equals(listaUsuarios.ElementAt(i).contra)) {
+                MessageBox.Show("¡Usuario loggeado correctamente!", "Inicio de sesión", MessageBoxButton.OK);
 
-                    MessageBox.Show("Usuario y contraseña correctas.", "Inicio de sesión correcto.", MessageBoxButton.OK);
-                    
-                    Menu menu = new Menu();
-                    menu.Show();
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Usuario o contraseña incorrectas, inténtelo de nuevo.", "Error de inicio de sesión", MessageBoxButton.OK, MessageBoxImage.Error);
-                    usuario.Clear();
-                    contra.Clear();
-                }
+                Menu menu = new Menu();
+                menu.Show();
+                this.Close();
             }
         }
 

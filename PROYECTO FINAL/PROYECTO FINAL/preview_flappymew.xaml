@@ -21,5 +21,61 @@
             <Image Source="media/exit.png" Height="19" Width="24"></Image>
         </Button>
 
+        <Rectangle HorizontalAlignment="Left" Height="900" Margin="80,0,0,0" Stroke="Transparent" VerticalAlignment="Center" Width="654" Fill="#FFFF9E9E"/>
+
+        <!-- PROTOTIPO -->
+        <Grid Margin="800,60,30,30">
+            <!-- LOGO -->
+            <Image HorizontalAlignment="Left" Height="100" Margin="332,-15,0,0" VerticalAlignment="Top" Width="100" Source="/logo.png"/>
+
+            <Label Content="Nombre" HorizontalAlignment="Left" Margin="80,153,0,0" VerticalAlignment="Top"
+               FontFamily="Multicolore" FontSize="80" x:Name="Nombre" Foreground="#FFFF8A23"/>
+            <Rectangle HorizontalAlignment="Left" Height="7" Margin="80,260,0,0" Fill="#FFFF8A23" VerticalAlignment="Top" Width="200"/>
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top"
+                   FontFamily="Multicolore" FontSize="25" Height="221" Width="610" Margin="0,296,0,0" x:Name="Descripcion">
+                <Run Text="TextBlock"/>
+                <Run Language="es-es" Text=" textblock textblock textblock textbvksiokvhsd sakvjdiavkjvk sjaskfka shjaskhfjah safhjhasjkfha jashjskhfaj jsfhasjhfjakha"/>
+            </TextBlock>
+
+            <!-- DIFICULTAD -->
+            <Image HorizontalAlignment="Left" Height="48" Margin="100,522,0,0" VerticalAlignment="Top" Width="48" Source="/favorito.png" RenderTransformOrigin="0.5,0.5"/>
+            <Label Content="Dificultad" HorizontalAlignment="Left" Margin="150,529,0,0" VerticalAlignment="Top"
+                   FontFamily="Multicolore" FontSize="20"/>
+            <Label Content="Dificultad" HorizontalAlignment="Left" Margin="150,554,0,0" VerticalAlignment="Top"
+                FontFamily="Multicolore" FontSize="15" x:Name="Dificultad"  Foreground="#FFFF8A23"/>
+            
+
+            <!-- TIPO -->
+            <Image HorizontalAlignment="Left" Height="48" Margin="100,619,0,0" VerticalAlignment="Top" Width="48" Source="/favorito.png" RenderTransformOrigin="0.5,0.5" />
+            
+            <Label Content="Tipo" HorizontalAlignment="Left" Margin="150,627,0,0" VerticalAlignment="Top"
+                FontFamily="Multicolore" FontSize="20"/>
+            <Label Content="Tipo" HorizontalAlignment="Left" Margin="150,653,0,0" VerticalAlignment="Top"
+                    FontFamily="Multicolore" FontSize="15" x:Name="Tipo" Foreground="#FFFF8A23"/>
+            
+            <!-- BOTON PARA JUGAR -->
+            <!-- Botón para iniciar sesión -->
+            <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="600" BorderThickness="1,1,1,1"
+                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,714,0,0"
+                BorderBrush="#FFFFFCE9" Click="Jugar_flappy">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"></Setter>
+                    </Style>
+                </Button.Resources>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontFamily="Multicolore" FontSize="25" TextAlignment="Center" Height="30" Width="201">
+                    <Run Language="es-es" Text="Jugar ahora" Foreground="White"/>
+                    </TextBlock>
+                </StackPanel>
+            </Button>
+
+        </Grid>
+
+
+
+
+
+
     </Grid>
 </Window>
