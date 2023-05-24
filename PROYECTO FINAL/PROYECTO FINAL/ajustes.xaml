@@ -8,6 +8,7 @@
         Title="ENTRE10TE" Height="900" Width="1600"
         WindowState="Maximized"
         WindowStyle="None">
+
     <Grid Background="#FFFFFCE9">
         <!-- Botones para salir de la aplicación -->
         <!-- Minimizar -->
@@ -20,6 +21,10 @@
                 Background="Transparent" BorderBrush="#FFFFFCE9" Click="Exit">
             <Image Source="media/exit.png" Height="19" Width="24"></Image>
         </Button>
+        <Image HorizontalAlignment="Center" Height="180" Margin="0,26,0,0" VerticalAlignment="Top" Width="180" Source="/logo.png"/>
+
+        <!-- SLIDER VOLUMEN -->
+       
 
     </Grid>
 </Window>
