@@ -70,18 +70,18 @@
 
             <!-- Pie de página, copyright -->
             <Label Content="© ENTRE10TE - Proyecto final de grado por Jane Orosco Damulog" HorizontalAlignment="Center"
-               Margin="0,825,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
+               Margin="0,760,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
 
             <!-- MINI PRESENTACIÓN -->
 
             <!-- MÁS JUGADOS -->
-            <Label Content="Los más jugados" HorizontalAlignment="Left" Margin="150,190,0,0" VerticalAlignment="Top"
+            <Label Content="Los más jugados" HorizontalAlignment="Left" Margin="150,150,0,0" VerticalAlignment="Top"
                    FontSize="40" FontFamily="Multicolore"/>
-            <Rectangle HorizontalAlignment="Left" Height="7" Margin="150,260,0,0" Fill="#FFFF8A23" VerticalAlignment="Top" Width="100"/>
+            <Rectangle HorizontalAlignment="Left" Height="7" Margin="150,210,0,0" Fill="#FFFF8A23" VerticalAlignment="Top" Width="100"/>
 
             <!-- JUEGOS -->
                 <!-- Juego 1-->
-            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="500" Width="400" Margin="100,305,0,0" Foreground="Red"
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="500" Width="400" Margin="100,240,0,0" Foreground="Red"
                     BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White"
                     Click="Preview_tictactoe">
                 <StackPanel Orientation="Vertical">
@@ -92,7 +92,7 @@
             </Button>
 
                 <!-- Juego 2 -->
-            <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="500" Width="400" Margin="0,305,0,0" Foreground="Red"
+            <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="500" Width="400" Margin="0,240,0,0" Foreground="Red"
                     BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White"
                     Click="Preview_wordle">
                 <StackPanel Orientation="Vertical">
@@ -103,7 +103,7 @@
             </Button>
 
                 <!-- Juego 3 -->
-            <Button HorizontalAlignment="Right" VerticalAlignment="Top" Height="500" Width="400" Margin="0,305,100,0" Foreground="Red"
+            <Button HorizontalAlignment="Right" VerticalAlignment="Top" Height="500" Width="400" Margin="0,240,100,0" Foreground="Red"
                     BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White"
                     Click="Preview_flappymew">
                 <StackPanel Orientation="Vertical">
