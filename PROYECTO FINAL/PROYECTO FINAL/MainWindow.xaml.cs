@@ -23,6 +23,8 @@ namespace PROYECTO_FINAL
         public MainWindow()
         {
             InitializeComponent();
+            MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+            MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
         }
 
         private void video_terminado(object sender, RoutedEventArgs e)

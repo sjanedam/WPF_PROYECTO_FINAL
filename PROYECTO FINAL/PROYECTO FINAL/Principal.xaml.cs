@@ -22,6 +22,8 @@ namespace PROYECTO_FINAL
         public Principal()
         {
             InitializeComponent();
+            MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+            MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
         }
 
         private void Invitado(object sender, RoutedEventArgs e)
@@ -42,16 +44,6 @@ namespace PROYECTO_FINAL
             registro registro = new registro();
             registro.Show();
             this.Close();
-        }
-
-        private void Exit(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Minimize(object sender, RoutedEventArgs e)
-        {
-            this.WindowState = WindowState.Minimized;
         }
     }
 }

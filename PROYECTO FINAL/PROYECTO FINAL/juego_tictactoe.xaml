@@ -5,8 +5,92 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PROYECTO_FINAL"
         mc:Ignorable="d"
-        Title="juego_tictactoe" Height="450" Width="800">
-    <Grid>
-        
+        Title="ENTRE10TE" Height="900" Width="1600"
+        FontFamily="Multicolore"
+        WindowState="Maximized"
+        >
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="estilo">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Background" Value="#FFFF8A23" />
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter x:Name="MyContentPresenter" 
+                                          Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="#22B3F0"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="True">
+                    <Setter Property="Background" Value="#FFFF8A23"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid Background="#FFFFFCE9">
+        <!-- GRID PARA LOS BOTONES -->
+        <Grid x:Name="Panel" Width="600" Height="600">
+            <!-- DEFINIR COLUMNAS Y FILAS -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="Boton01" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="120" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton02" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="120" Grid.Column="1" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton03" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="120" Grid.Column="2" Margin="10, 10, 10, 10"/>
+
+            <Button x:Name="Boton04" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="120" Grid.Row="1" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton05" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="120" Grid.Column="1" Grid.Row="1" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton06" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="120" Grid.Column="2" Grid.Row="1" Margin="10, 10, 10, 10"/>
+
+            <Button x:Name="Boton07" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="120" Grid.Row="2" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton08" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="120" Grid.Column="1" Grid.Row="2" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton09" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="120" Grid.Column="2" Grid.Row="2" Margin="10, 10, 10, 10">
+            </Button>
+        </Grid>
+
+
+        <Border BorderBrush="Black" BorderThickness="1"/>
+        <Button Content="Resetear juego" HorizontalAlignment="Center" Margin="0,771,0,0" VerticalAlignment="Top"
+                FontFamily="Multicolore" FontSize="50" Width="600" Height="70" Background="#FFFF8A23" Foreground="White"
+                Click="boton_resetear">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+        <!--<Image HorizontalAlignment="Center" Height="159" Margin="0,47,0,0" VerticalAlignment="Top" Width="159" Source="/logo.png"/> -->
+
+
     </Grid>
 </Window>

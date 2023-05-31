@@ -34,6 +34,8 @@ namespace PROYECTO_FINAL
                 String tipo = datos.ElementAt(3).ToString();
 
                 InitializeComponent();
+                MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+                MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
 
                 Nombre.Content = nom.ToString();
                 Descripcion.Text = desc.ToString();

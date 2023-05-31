@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:PROYECTO_FINAL"
         mc:Ignorable="d"
         Title="ENTRE10TE" Height="900" Width="1600"
+        FontFamily="Multicolore"
         WindowState="Maximized"
-        WindowStyle="None">
+        >
     <Grid Background="#FFFFFCE9">
         <!-- Logo y nombre de la empresa -->
         <Image x:Name="logo" HorizontalAlignment="Center" Height="231" Margin="0,28,0,0" VerticalAlignment="Top"

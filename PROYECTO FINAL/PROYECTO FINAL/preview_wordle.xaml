@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:PROYECTO_FINAL"
         mc:Ignorable="d"
         Title="ENTRE10TE" Height="900" Width="1600"
+        FontFamily="Multicolore"
         WindowState="Maximized"
-        WindowStyle="None">
+        >
     <Grid Background="#FFFFFCE9">
         <!-- Botones para salir de la aplicación -->
         <!-- Minimizar -->

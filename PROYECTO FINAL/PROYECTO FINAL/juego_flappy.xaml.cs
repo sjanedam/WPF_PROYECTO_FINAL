@@ -22,6 +22,8 @@ namespace PROYECTO_FINAL
         public juego_flappy()
         {
             InitializeComponent();
+            MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+            MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
         }
     }
 }

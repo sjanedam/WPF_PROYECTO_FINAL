@@ -22,6 +22,8 @@ namespace PROYECTO_FINAL
         public registro()
         {
             InitializeComponent();
+            MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+            MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
         }
 
         private void Exit(object sender, RoutedEventArgs e)

@@ -33,6 +33,8 @@ namespace PROYECTO_FINAL
             if (datos3en.Any() && datosWord.Any() && datosMew.Any())
             {
                 InitializeComponent();
+                MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+                MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
 
                 tipo3en.Content = datos3en.ElementAt(3).ToString();
                 tipoWord.Content = datosWord.ElementAt(3).ToString();
@@ -45,6 +47,8 @@ namespace PROYECTO_FINAL
             else
             {
                 InitializeComponent();
+                MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+                MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
             }
         }
         private void Exit(object sender, RoutedEventArgs e)

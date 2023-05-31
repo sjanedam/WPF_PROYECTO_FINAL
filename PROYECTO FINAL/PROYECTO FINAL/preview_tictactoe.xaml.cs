@@ -34,6 +34,8 @@ namespace PROYECTO_FINAL
                 String tipo = datos.ElementAt(3).ToString();
 
                 InitializeComponent();
+                MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+                MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
 
                 Nombre.Content = nom.ToString();
                 Descripcion.Text = desc.ToString();
@@ -47,8 +49,8 @@ namespace PROYECTO_FINAL
         }
         public void Jugar_tictactoe(object sender, RoutedEventArgs e)
         {
-            juego_flappy flappy = new juego_flappy();
-            flappy.Show();
+            juego_tictactoe tic = new juego_tictactoe();
+            tic.Show();
             this.Close();
         }
 

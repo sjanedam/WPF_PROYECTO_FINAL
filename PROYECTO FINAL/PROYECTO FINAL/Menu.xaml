@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:PROYECTO_FINAL"
         mc:Ignorable="d"
         Title="ENTRE10TE" Height="900" Width="1600"
+        FontFamily="Multicolore"
         WindowState="Maximized"
-        WindowStyle="None">
-
+        >
     <!-- Recuros de la pantalla (Estilos) -->
     <Window.Resources>
         <!-- Estilo de la fuente de texto-->
@@ -67,18 +67,6 @@
                Width="84" Source="media/logo.png"/>
             <Label x:Name="Nombre" Content="ENTRE10TE" HorizontalAlignment="Center" Margin="0,114,0,0" VerticalAlignment="Top"
                FontSize="35" FontFamily="Multicolore " Background="{x:Null}" Foreground="#FFFF8A23" Height="46" Width="209"/>
-
-            <!-- Botones para salir de la aplicación -->
-            <!-- Minimizar -->
-            <Button HorizontalAlignment="Left" Margin="1470,15,0,0" VerticalAlignment="Top"
-                Background="Transparent" BorderBrush="#FFFFFCE9" Click="Minimize">
-                <Image Source="media/minimize.png" Height="19" Width="24"></Image>
-            </Button>
-            <!-- Cerrar -->
-            <Button HorizontalAlignment="Left" Margin="1500,15,0,0" VerticalAlignment="Top"
-                Background="Transparent" BorderBrush="#FFFFFCE9" Click="Exit">
-                <Image Source="media/exit.png" Height="19" Width="24"></Image>
-            </Button>
 
             <!-- Pie de página, copyright -->
             <Label Content="© ENTRE10TE - Proyecto final de grado por Jane Orosco Damulog" HorizontalAlignment="Center"

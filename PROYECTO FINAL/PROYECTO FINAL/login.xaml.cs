@@ -24,6 +24,8 @@ namespace PROYECTO_FINAL
         public login()
         {
             InitializeComponent();
+            MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
+            MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
         }
 
         private void Iniciar(object sender, RoutedEventArgs e)
