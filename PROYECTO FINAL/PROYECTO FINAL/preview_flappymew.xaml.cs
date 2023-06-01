@@ -62,5 +62,12 @@ namespace PROYECTO_FINAL
         {
             this.WindowState = WindowState.Minimized;
         }
+
+        private void Volver_a_menu(object sender, RoutedEventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Close();
+        }
     }
 }

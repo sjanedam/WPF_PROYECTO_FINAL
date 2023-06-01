@@ -57,6 +57,59 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
+        <!-- ESTILO PARA LOS BOTONES -->
+        <Style TargetType="Button" x:Key="estilo">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <Border CornerRadius="20" Background="White" BorderBrush="Black" BorderThickness="1"/>
+                            <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                        HorizontalAlignment="Center" VerticalAlignment="Center">
+                            </ContentPresenter>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid Background="{TemplateBinding Background}">
+                                    <Border CornerRadius="20" Background="WhiteSmoke" BorderBrush="Black" BorderThickness="1"/>
+                                    <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    </ContentPresenter>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        
+        
+    <!-- STACK PANEL -->
+        <Style TargetType="StackPanel" x:Key="estiloStack">
+            <Style.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="#FFFF8A23"/>
+                    <Setter Property="FontSize" Value="25"/>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Style.Resources>
+        </Style>
     </Window.Resources>
 
     <Grid>
@@ -81,35 +134,32 @@
 
             <!-- JUEGOS -->
                 <!-- Juego 1-->
-            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="500" Width="400" Margin="100,240,0,0" Foreground="Red"
-                    BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White"
-                    Click="Preview_tictactoe">
-                <StackPanel Orientation="Vertical">
-                    <Image Source="media/tresenraya.png"/>
-                    <Label Content="x" FontFamily="Multicolore" FontSize="15" x:Name="tipo3en"/>
-                    <Label Content="Nombre" FontFamily="Multicolore" FontSize="28" x:Name="nombre3en"/>
+            <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="470" Width="400" Margin="100,250,0,0"
+                    Click="Preview_tictactoe" Style="{StaticResource estilo}">
+                <StackPanel Orientation="Vertical" Style="{StaticResource estiloStack}">
+                    <Image Source="media/tresenraya.png" Height="350" Width="350"/>
+                    <Label Content="x" x:Name="tipo3en" Width="360"/>
+                    <Label Content="Nombre" x:Name="nombre3en" Width="360"/>
                 </StackPanel>
             </Button>
 
                 <!-- Juego 2 -->
-            <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="500" Width="400" Margin="0,240,0,0" Foreground="Red"
-                    BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White"
-                    Click="Preview_wordle">
-                <StackPanel Orientation="Vertical">
-                    <Image Source="media/wordle.png"/>
-                    <Label Content="X" FontFamily="Multicolore" FontSize="15" x:Name="tipoWord"/>
-                    <Label Content="Nombre" FontFamily="Multicolore" FontSize="28" x:Name="nombreWord"/>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="470" Width="400" Margin="0,250,0,0"
+                    Click="Preview_wordle" Style="{StaticResource estilo}">
+                <StackPanel Orientation="Vertical" Style="{StaticResource estiloStack}">
+                    <Image Source="media/wordle.png" Height="350" Width="350"/>
+                    <Label Content="X" x:Name="tipoWord" Width="360"/>
+                    <Label Content="Nombre" x:Name="nombreWord" Width="360"/>
                 </StackPanel>
             </Button>
 
                 <!-- Juego 3 -->
-            <Button HorizontalAlignment="Right" VerticalAlignment="Top" Height="500" Width="400" Margin="0,240,100,0" Foreground="Red"
-                    BorderThickness="1,1,1,1" Padding="10,10,10,10" UseLayoutRounding="False" Background="White"
-                    Click="Preview_flappymew">
-                <StackPanel Orientation="Vertical">
-                    <Image Source="/flappymew.png"/>
-                    <Label Content="x" FontFamily="Multicolore" FontSize="15" x:Name="tipoMew"/>
-                    <Label Content="Nombre" FontFamily="Multicolore" FontSize="28" x:Name="nombreMew"/>
+            <Button HorizontalAlignment="Right" VerticalAlignment="Top" Height="470" Width="400" Margin="0,250,100,0"
+                    Click="Preview_flappymew" Style="{StaticResource estilo}">
+                <StackPanel Orientation="Vertical" Style="{StaticResource estiloStack}">
+                    <Image Source="/flappymew.png" Height="350" Width="350"/>
+                    <Label Content="x" x:Name="tipoMew" Width="360"/>
+                    <Label Content="Nombre" x:Name="nombreMew" Width="360"/>
                 </StackPanel>
             </Button>
 
@@ -124,7 +174,7 @@
                     <!--// Grid for the Menu Toggle Button //-->
                     <Grid Height="90">
                         <!--// Menu title text //-->
-                        <TextBlock  Grid.Row="1" Grid.Column="0" Margin="73,0,0,0" Text="MENÚ" Foreground="White" FontSize="22"
+                        <TextBlock  Grid.Row="1" Grid.Column="0" Margin="75,-10,0,0" Text="MENÚ" Foreground="White" FontSize="22"
                                     Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center"
                                     Style="{StaticResource font_style}">
                         </TextBlock>

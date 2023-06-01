@@ -10,9 +10,11 @@
         WindowState="Maximized"
         >
     <Window.Resources>
+        <!-- GRID -->
         <Style TargetType="Button" x:Key="estilo">
             <Setter Property="OverridesDefaultStyle" Value="True" />
             <Setter Property="Background" Value="#FFFF8A23" />
+            <Setter Property="Cursor" Value="Hand"/>
 
             <Setter Property="Template">
                 <Setter.Value>
@@ -37,10 +39,74 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
+        <!-- BOTON -->
+        <Style TargetType="Button" x:Key="boton">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <Border CornerRadius="25" Background="#FFFF8A23"/>
+                            <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          TextBlock.Foreground="#FFFFFCE9" TextBlock.FontSize="40">
+                            </ContentPresenter>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid Background="{TemplateBinding Background}">
+                                    <Border CornerRadius="25" Background="#FACC8D"/>
+                                    <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          TextBlock.Foreground="#FFFFFCE9" TextBlock.FontSize="39">
+                                    </ContentPresenter>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <!-- BOTÓN DE VOLVER ATRÁS -->
+        <Style TargetType="Button" x:Key="goBack">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <Border CornerRadius="15" Background="#FFFF8A23" Opacity="0.5"/>
+                            <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          TextBlock.Foreground="#FFFFFCE9" TextBlock.FontSize="20">
+                            </ContentPresenter>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
     <Grid Background="#FFFFFCE9">
+        <!-- VOLVER ATRÁS -->
+        <Button HorizontalAlignment="Left" Margin="1480,28,0,0" VerticalAlignment="Top" Height="40" Width="40" Style="{StaticResource goBack}"
+                Click="Volver_a_menu">
+            <StackPanel Orientation="Horizontal">
+                <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/goback.png"/>
+            </StackPanel>
+        </Button>
+      
         <!-- GRID PARA LOS BOTONES -->
-        <Grid x:Name="Panel" Width="600" Height="600">
+        <Grid x:Name="Panel" Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,121,0,0">
             <!-- DEFINIR COLUMNAS Y FILAS -->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
@@ -76,20 +142,21 @@
             </Button>
         </Grid>
 
-
-        <Border BorderBrush="Black" BorderThickness="1"/>
-        <Button Content="Resetear juego" HorizontalAlignment="Center" Margin="0,771,0,0" VerticalAlignment="Top"
-                FontFamily="Multicolore" FontSize="50" Width="600" Height="70" Background="#FFFF8A23" Foreground="White"
-                Click="boton_resetear">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="30"></Setter>
-                </Style>
-            </Button.Resources>
+        <Button Content="Resetear juego" HorizontalAlignment="Center" Margin="0,680,0,0" VerticalAlignment="Top"
+                Width="600" Height="70" Click="boton_resetear" Style="{StaticResource boton}">
         </Button>
 
+        <Label HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" FontSize="40" Content="Turno:" x:Name="Turno"/>
 
-        <!--<Image HorizontalAlignment="Center" Height="159" Margin="0,47,0,0" VerticalAlignment="Top" Width="159" Source="/logo.png"/> -->
+        <!-- Puntuacion X -->
+        <Label Margin="200,228,0,0" FontSize="40" Content="Puntos de X" Foreground="Orange" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Margin="285,289,0,0" FontSize="80" Content="" Foreground="#22B3F0" x:Name="PuntoX" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle Fill="Orange" Width="282" Height="5" Margin="200,289,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <!-- Puntuación O -->
+        <Label Margin="1116,228,0,0" FontSize="40" Content="Puntos de O" Foreground="Orange" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Margin="1205,289,0,0" FontSize="80" Content="" Foreground="#22B3F0" x:Name="PuntoO" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Rectangle Fill="Orange" Width="290" Height="5" Margin="1116,289,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
 
     </Grid>

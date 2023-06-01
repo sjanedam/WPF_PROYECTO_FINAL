@@ -9,6 +9,44 @@
         FontFamily="Multicolore"
         WindowState="Maximized"
         >
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="estilo">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <Border CornerRadius="15" Background="#FFFF8A23"/>
+                            <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          TextBlock.Foreground="#FFFFFCE9" TextBlock.FontSize="20">
+                            </ContentPresenter>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid Background="{TemplateBinding Background}">
+                                    <Border CornerRadius="15" Background="#FACC8D"/>
+                                    <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          TextBlock.Foreground="#FFFFFCE9" TextBlock.FontSize="19">
+                                    </ContentPresenter>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid Background="#FFFFFCE9">
         <!-- Logo y nombre de la empresa -->
         <Image x:Name="logo" HorizontalAlignment="Center" Height="231" Margin="0,28,0,0" VerticalAlignment="Top"
@@ -18,45 +56,28 @@
 
         <!-- Pie de página Copyright -->
         <Label Content="© ENTRE10TE - Proyecto final de grado por Jane Orosco Damulog" HorizontalAlignment="Center"
-               Margin="0,825,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
+               Margin="0,760,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
 
         <!-- INICIAR SESIÓN-->
-        <Label Content="INICIAR SESIÓN" HorizontalAlignment="Center" Margin="0,397,0,0" VerticalAlignment="Top" FontSize="50"
+        <Label Content="INICIAR SESIÓN" HorizontalAlignment="Center" Margin="0,384,0,0" VerticalAlignment="Top" FontSize="40"
                FontFamily="Multicolore"/>
-            <!-- Usuario -->
-        <Label Content="Usuario" HorizontalAlignment="Center" Margin="0,494,0,0" VerticalAlignment="Top"
-               FontFamily="Multicolore" FontSize="20" Height="32" Width="103"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,530,0,0" VerticalAlignment="Top" Width="250" Height="38"
-                 FontSize="25" x:Name="usuario"/>
-            <!-- Contraseña -->
-        <Label Content="Contraseña" HorizontalAlignment="Center" Margin="0,594,0,0" VerticalAlignment="Top"
-               FontFamily="Multicolore" FontSize="20" Height="31" Width="152"/>
-        <PasswordBox HorizontalAlignment="Center" Margin="0,630,0,0"  VerticalAlignment="Top" Width="251" Height="37"
-                     FontSize="25" x:Name="contra"/>
-            <!-- Botón para iniciar sesión -->
-        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="251" BorderThickness="1,1,1,1"
-                Padding="10,10,10,10" UseLayoutRounding="False" Background="#FFFF6F00" Margin="0,691,0,0" Click="Iniciar"
-                BorderBrush="#FFFFFCE9">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="30"></Setter>
-                </Style>
-            </Button.Resources>
-            <StackPanel Orientation="Vertical">
-                <TextBlock FontFamily="Multicolore" FontSize="25" TextAlignment="Center" Height="30" Width="201">
-                    <Run Language="es-es" Text="Iniciar sesión" Foreground="White"/>
-                </TextBlock>
-            </StackPanel>
+        <!-- Usuario -->
+        <Label Content="Usuario" HorizontalAlignment="Center" Margin="0,466,0,0" VerticalAlignment="Top"
+               FontFamily="Multicolore" FontSize="15" Height="32" Width="80"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,503,0,0" VerticalAlignment="Top" Width="250" Height="30"
+                 FontSize="20" x:Name="usuario"/>
+        <!-- Contraseña -->
+        <Label Content="Contraseña" HorizontalAlignment="Center" Margin="0,538,0,0" VerticalAlignment="Top"
+               FontFamily="Multicolore" FontSize="15" Height="31" Width="118"/>
+        <PasswordBox HorizontalAlignment="Center" Margin="0,574,0,0"  VerticalAlignment="Top" Width="252" Height="30"
+                     FontSize="20" x:Name="contra"/>
+        <!-- Botón para iniciar sesión -->
+        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="300" Margin="0,634,0,0"
+                Click="Iniciar" Content="Iniciar sesión" Style="{StaticResource estilo}">
         </Button>
         <!-- Botón de registro -->
-        <Button HorizontalAlignment="Center" Margin="0,771,0,0" VerticalAlignment="Top" Background="#FFFFFCE9"
-                BorderThickness="1" BorderBrush="#FFFFFCE9" FontFamily="Multicolore" Foreground="#FFFF6F00"
-                FontSize="20" Click="Registro" Content="Registrarse" Padding="10,5,10,5">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="20"></Setter>
-                </Style>
-            </Button.Resources>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Top" Height="46" Width="300" Margin="0,697,0,0"
+                Click="Registro" Content="Registrarse" Style="{StaticResource estilo}">
         </Button>
 
 

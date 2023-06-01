@@ -12,7 +12,8 @@
     <Window.Resources>
         <Style TargetType="Button" x:Key="estilo">
             <Setter Property="OverridesDefaultStyle" Value="True" />
-
+            <Setter Property="Cursor" Value="Hand"/>
+            
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type Button}">
@@ -33,10 +34,10 @@
                         <Setter.Value>
                             <ControlTemplate TargetType="{x:Type Button}">
                                 <Grid Background="{TemplateBinding Background}">
-                                    <Border CornerRadius="25" Background="#22B3F0"/>
+                                    <Border CornerRadius="25" Background="#FACC8D"/>
                                     <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
                                           HorizontalAlignment="Center" VerticalAlignment="Center"
-                                          TextBlock.Foreground="Wheat">
+                                          TextBlock.Foreground="#FFFFFCE9" TextBlock.FontSize="39">
                                     </ContentPresenter>
                                 </Grid>
                             </ControlTemplate>
