@@ -157,7 +157,7 @@ namespace PROYECTO_FINAL {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PROYECTO FINAL;V1.0.0.0;component/juego_tictactoe.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PROYECTO FINAL;component/juego_tictactoe.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\juego_tictactoe.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

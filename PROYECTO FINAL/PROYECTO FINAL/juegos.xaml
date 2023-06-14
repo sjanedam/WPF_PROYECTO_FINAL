@@ -9,8 +9,169 @@
         FontFamily="Multicolore"
         WindowState="Maximized"
         >
-    <Grid Background="#FFFFFCE9">
+    <Window.Resources>
+        <!-- ESTILO PARA LOS BOTONES -->
+        <Style TargetType="Button" x:Key="estilo">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <Border CornerRadius="20" Background="White" BorderBrush="Black" BorderThickness="1"/>
+                            <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                        HorizontalAlignment="Center" VerticalAlignment="Center">
+                            </ContentPresenter>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid Background="{TemplateBinding Background}">
+                                    <Border CornerRadius="20" Background="WhiteSmoke" BorderBrush="Black" BorderThickness="1"/>
+                                    <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    </ContentPresenter>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- STACK PANEL -->
+        <Style TargetType="StackPanel" x:Key="estiloStack">
+            <Style.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="#FFFF8A23"/>
+                    <Setter Property="FontSize" Value="25"/>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Style.Resources>
+        </Style>
         
+        <!-- BOTÓN DE VOLVER ATRÁS -->
+        <Style TargetType="Button" x:Key="goBack">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <Border CornerRadius="15" Background="#FFFF8A23" Opacity="0.5"/>
+                            <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          TextBlock.Foreground="#FFFFFCE9" TextBlock.FontSize="20">
+                            </ContentPresenter>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Background="#FFFFFCE9">
+        <!-- Pie de página, copyright -->
+        <Label Content="© ENTRE10TE - Proyecto final de grado por Jane Orosco Damulog" HorizontalAlignment="Center"
+               Margin="0,760,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Multicolore " Foreground="#FF9A9A9A"/>
+
+        <!-- MÁS JUGADOS -->
+        <Label Content="Lista de juegos" HorizontalAlignment="Left" Margin="130,50,0,0" VerticalAlignment="Top"
+                   FontSize="40" FontFamily="Multicolore"/>
+        <Rectangle HorizontalAlignment="Left" Height="7" Margin="130,110,0,0" Fill="#FFFF8A23" VerticalAlignment="Top" Width="100"/>
+
+        <!-- VOLVER ATRÁS -->
+        <Button HorizontalAlignment="Left" Margin="1480,28,0,0" VerticalAlignment="Top" Height="40" Width="40" Style="{StaticResource goBack}"
+                Click="Volver_a_menu">
+            <StackPanel Orientation="Horizontal">
+                <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/goback.png"/>
+            </StackPanel>
+        </Button>
+
+        <!-- JUEGOS -->
+        <!-- Juego 1-->
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="270" Width="265" Margin="144,146,0,0"
+                    Click="Preview_flappymew" Style="{StaticResource estilo}">
+            <StackPanel Orientation="Vertical" Style="{StaticResource estiloStack}">
+                <Image Source="/flappymew.png" Height="200" Width="200"/>
+                <Label Content="A" Name="J1"/>
+            </StackPanel>
+        </Button>
+
+        <!-- Juego 2 -->
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="270" Width="265" Margin="485,146,0,0"
+                    Click="Preview_tictactoe" Style="{StaticResource estilo}">
+            <StackPanel Orientation="Vertical" Style="{StaticResource estiloStack}">
+                <Image Source="media/tresenraya.png" Height="200" Width="200"/>
+                <Label Content="A"  Name="J2"/>
+            </StackPanel>
+        </Button>
+
+        <!-- Juego 3 -->
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Height="270" Width="265" Margin="0,146,490,0"
+                    Click="Preview_wordle" Style="{StaticResource estilo}">
+            <StackPanel Orientation="Vertical" Style="{StaticResource estiloStack}">
+                <Image Source="media/wordle.png" Height="200" Width="200"/>
+                <Label Content="A"  Name="J3"/>
+            </StackPanel>
+        </Button>
+
+        <!-- Juego 4 -->
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Height="270" Width="265" Margin="0,146,139,0"
+                    Style="{StaticResource estilo}">
+            <StackPanel Orientation="Vertical" Style="{StaticResource estiloStack}">
+                <Image Source="media/bm.png" Height="200" Width="200"/>
+                <Label Content="A"  Name="J4"/>
+            </StackPanel>
+        </Button>
+
+        <!-- Juego 5-->
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="270" Width="265" Margin="144,467,0,0"
+                    Style="{StaticResource estilo}">
+            <StackPanel Orientation="Vertical" Style="{StaticResource estiloStack}">
+                <Image Source="media/bd.png" Height="200" Width="200"/>
+                <Label Content="A"  Name="J5"/>
+            </StackPanel>
+        </Button>
+
+        <!-- Juego 6 -->
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="270" Width="265" Margin="485,467,0,0"
+                    Style="{StaticResource estilo}">
+            <StackPanel Orientation="Vertical" Style="{StaticResource estiloStack}">
+                <Image Source="media/pc.png" Height="200" Width="200"/>
+                <Label Content="A" Name="J6"/>
+            </StackPanel>
+        </Button>
+
+        <!-- Juego 7 -->
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Height="270" Width="265" Margin="0,467,490,0"
+                    Style="{StaticResource estilo}">
+            <StackPanel Orientation="Vertical" Style="{StaticResource estiloStack}">
+                <Image Source="media/tt.png" Height="200" Width="200"/>
+                <Label Content="A" Name="J7"/>
+            </StackPanel>
+        </Button>
+
+        <!-- Juego 8 -->
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Height="270" Width="265" Margin="0,467,139,0"
+                    Style="{StaticResource estilo}">
+            <StackPanel Orientation="Vertical" Style="{StaticResource estiloStack}">
+                <Image Source="media/aje.png" Height="200" Width="200"/>
+                <Label Content="A" Name="J8"/>
+            </StackPanel>
+        </Button>
 
     </Grid>
 </Window>

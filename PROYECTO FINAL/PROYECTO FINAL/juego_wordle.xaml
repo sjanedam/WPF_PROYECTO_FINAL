@@ -9,7 +9,176 @@
         FontFamily="Multicolore"
         WindowState="Maximized"
         >
-    <Grid>
-        
+    <Window.Resources>
+        <!-- GRID -->
+        <Style TargetType="Button" x:Key="estilo">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Background" Value="Orange" />
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter x:Name="MyContentPresenter" 
+                                          Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!-- BOTON -->
+        <Style TargetType="Button" x:Key="boton">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <Border CornerRadius="25" Background="#FFFF8A23"/>
+                            <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          TextBlock.Foreground="#FFFFFCE9" TextBlock.FontSize="40">
+                            </ContentPresenter>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Grid Background="{TemplateBinding Background}">
+                                    <Border CornerRadius="25" Background="#FACC8D"/>
+                                    <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          TextBlock.Foreground="#FFFFFCE9" TextBlock.FontSize="39">
+                                    </ContentPresenter>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <!-- BOTÓN DE VOLVER ATRÁS -->
+        <Style TargetType="Button" x:Key="goBack">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <Border CornerRadius="15" Background="#FFFF8A23" Opacity="0.5"/>
+                            <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          TextBlock.Foreground="#FFFFFCE9" TextBlock.FontSize="20">
+                            </ContentPresenter>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Background="#FFFFFCE9">
+        <!-- VOLVER ATRÁS -->
+        <Button HorizontalAlignment="Left" Margin="1480,28,0,0" VerticalAlignment="Top" Height="40" Width="40" Style="{StaticResource goBack}"
+                Click="Volver_a_menu">
+            <StackPanel Orientation="Horizontal">
+                <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/goback.png"/>
+            </StackPanel>
+        </Button>
+        <!-- GRID PARA LOS BOTONES -->
+        <Grid x:Name="Panel" Width="400" Height="400" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0">
+            <!-- DEFINIR COLUMNAS Y FILAS -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="Boton01" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton02" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="1" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton03" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="2" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton04" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="3" Margin="10, 10, 10, 10"/>
+
+            <Button x:Name="Boton05" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Margin="10, 10, 10, 10" Grid.Row="1"/>
+            <Button x:Name="Boton06" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="1" Grid.Row="1" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton07" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="2" Grid.Row="1" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton08" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="3" Grid.Row="1" Margin="10, 10, 10, 10"/>
+
+            <Button x:Name="Boton09" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Margin="10, 10, 10, 10" Grid.Row="2"/>
+            <Button x:Name="Boton10" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="1" Grid.Row="2" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton11" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="2" Grid.Row="2" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton12" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="3" Grid.Row="2" Margin="10, 10, 10, 10"/>
+
+            <Button x:Name="Boton13" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Margin="10, 10, 10, 10" Grid.Row="3"/>
+            <Button x:Name="Boton14" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="1" Grid.Row="3" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton15" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="2" Grid.Row="3" Margin="10, 10, 10, 10"/>
+            <Button x:Name="Boton16" Click="boton_jugar" BorderBrush="{x:Null}" Style="{StaticResource estilo}"
+                        FontFamily="Multicolore" FontSize="60" Grid.Column="3" Grid.Row="3" Margin="10, 10, 10, 10"/>
+
+        </Grid>
+        <Button Content="Jugar" HorizontalAlignment="Center" Margin="0,685,0,0" VerticalAlignment="Top"
+                Style="{StaticResource boton}" Width="400" Height="50" Click="boton_jugar"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,581,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"
+                 Width="400" Height="40" FontSize="30" TextAlignment="Center" x:Name="guess"/>
+
+        <TextBlock Text="Tienes que averiguar la palabra (de 4 letras) en cuatro intentos."
+               HorizontalAlignment="Left" Height="78" VerticalAlignment="Top" Width="365"
+                   TextAlignment="Justify" TextWrapping="Wrap" FontSize="20" Foreground="Orange" Margin="1066,201,0,0"/>
+
+        <TextBlock Text="Si la letra se encuentra en la posición adecuada, entonces se coloreará el fondo de color verde."
+               HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="365"
+                   TextAlignment="Justify" TextWrapping="Wrap" FontSize="20" Foreground="Orange" Margin="1066,284,0,0"/>
+
+        <TextBlock Text="Si la letra se encuentra en la palabra, pero no en la posición adecuada, entonces se coloreará el fondo de color amarillo."
+               HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Width="365"
+                   TextAlignment="Justify" TextWrapping="Wrap" FontSize="20" Foreground="Orange" Margin="1066,389,0,0"/>
+
+        <TextBlock Text="Si la letra no se encuentra en la palabra, entonces se coloreará el fondo de color gris."
+               HorizontalAlignment="Left" Height="108" VerticalAlignment="Top" Width="365"
+                   TextAlignment="Justify" TextWrapping="Wrap" FontSize="20" Foreground="Orange" Margin="1066,513,0,0"/>
+
+
+
+
+
+
+        <Label Foreground="#22B3F0" FontSize="80" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="294,185,0,0" x:Name="Puntos"/>
+        <Label Content="Reglas" HorizontalAlignment="Left" Margin="1144,100,0,0" VerticalAlignment="Top" FontSize="50" Foreground="Orange"/>
+        <Rectangle HorizontalAlignment="Left" Height="5" Margin="1150,172,0,0" Fill="Orange" VerticalAlignment="Top" Width="204"/>
+
+        <Label Content="Puntuación" HorizontalAlignment="Left" Margin="192,100,0,0" VerticalAlignment="Top" FontSize="50" Foreground="Orange"/>
+        <Rectangle HorizontalAlignment="Left" Height="4" Margin="176,170,0,0" Fill="Orange" VerticalAlignment="Top" Width="382"/>
+
     </Grid>
 </Window>

@@ -219,15 +219,15 @@
                                ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
                         <!-- Perfil -->
-                        <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter" MouseDoubleClick="Abrir_perfil">
+                        <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter" MouseDoubleClick="Cerrar_perfil">
                             <StackPanel Orientation="Horizontal" Width="230">
                                 <Image Source="media/account.png" Stretch="None" Margin="0,0,0,0"/>
-                                <TextBlock Text="Perfil" Margin="25,0,0,0" Style="{StaticResource font_style}"/>
+                                <TextBlock Text="Salir" Margin="25,0,0,0" Style="{StaticResource font_style}"/>
                             </StackPanel>
                             <!-- Tooltip -->
                             <ListViewItem.ToolTip>
                                 <ToolTip x:Name="perfil_tooltip"
-                                         Content="PERFIL"
+                                         Content="Salir"
                                          Style="{StaticResource tooltip_style}"/>
                             </ListViewItem.ToolTip>
                         </ListViewItem>
@@ -241,18 +241,6 @@
                             <!-- Tooltip -->
                             <ListViewItem.ToolTip>
                                 <ToolTip x:Name="juegos_tooltip" Content="JUEGOS" Style="{StaticResource tooltip_style}"/>
-                            </ListViewItem.ToolTip>
-                        </ListViewItem>
-
-                        <!-- Favoritos -->
-                        <ListViewItem HorizontalAlignment="Left" Margin="0,0,0,15" MouseEnter="ListViewItem_MouseEnter" MouseDoubleClick="Abrir_favoritos">
-                            <StackPanel Orientation="Horizontal" Width="230">
-                                <Image Source="media/favorite.png" Stretch="None" Margin="0,0,0,0"/>
-                                <TextBlock Text="Favoritos" Margin="25,0,0,0" Style="{StaticResource font_style}"/>
-                            </StackPanel>
-                            <!-- Tooltip -->
-                            <ListViewItem.ToolTip>
-                                <ToolTip x:Name="favoritos_tooltip" Content="FAVORITOS" Style="{StaticResource tooltip_style}"/>
                             </ListViewItem.ToolTip>
                         </ListViewItem>
 

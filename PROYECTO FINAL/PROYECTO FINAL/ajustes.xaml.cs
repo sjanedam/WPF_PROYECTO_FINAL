@@ -26,5 +26,12 @@ namespace PROYECTO_FINAL
             MaxHeight = SystemParameters.MaximizedPrimaryScreenHeight;
             MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
         }
+
+        private void Volver_a_menu(object sender, RoutedEventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Close();
+        }
     }
 }

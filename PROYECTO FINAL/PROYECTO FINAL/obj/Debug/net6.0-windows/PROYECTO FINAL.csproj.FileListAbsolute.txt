@@ -9,12 +9,10 @@ C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL.csproj.AssemblyReference.cache
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\ajustes.g.cs
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\favoritos.g.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\juegos.g.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\login.g.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Menu.g.cs
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\perfil.g.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_flappymew.g.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_tictactoe.g.cs
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_wordle.g.cs
@@ -24,12 +22,10 @@ C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL_MarkupCompile.cache
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\PROYECTO FINAL_MarkupCompile.lref
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\ajustes.baml
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\favoritos.baml
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\juegos.baml
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\login.baml
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\Menu.baml
-C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\perfil.baml
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_flappymew.baml
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_tictactoe.baml
 C:\Users\Jane\Videos\WPF_PROYECTO_FINAL\PROYECTO FINAL\PROYECTO FINAL\obj\Debug\net6.0-windows\preview_wordle.baml

@@ -9,7 +9,71 @@
         FontFamily="Multicolore"
         WindowState="Maximized"
         >
-    <Grid>
-        
-    </Grid>
+    <Window.Resources>
+        <!-- BOTÓN DE VOLVER ATRÁS -->
+        <Style TargetType="Button" x:Key="goBack">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <Border CornerRadius="15" Background="#FFFF8A23" Opacity="0.5"/>
+                            <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          TextBlock.Foreground="#FFFFFCE9" TextBlock.FontSize="20">
+                            </ContentPresenter>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Canvas Background="LightBlue" x:Name="Pantalla" KeyDown="KeyIsDown" KeyUp="KeyIsuP" Focusable="True">
+        <!-- BACKGROUND NUBES-->
+        <Image Source="/nubes.png" Margin="224,47,224,198" Tag="Nube"></Image>
+
+
+        <!-- OBSTACULOS -->
+        <Image Canvas.Left="100" Canvas.Top="-41" Height="352" Width="100" Source="/columna1.png" Tag="Obs1"/>
+        <Image Canvas.Left="100" Canvas.Top="523" Height="352" Width="100" Source="/columna1.png" Tag="Obs1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <Image Canvas.Left="373" Canvas.Top="-195" Height="352" Width="100" Source="/columna2.png" Tag="Obs2"/>
+        <Image Canvas.Left="373" Canvas.Top="405" Height="352" Width="100" Source="/columna2.png" Tag="Obs2"/>
+
+        <Image Canvas.Left="700" Height="352" Width="100" Source="/columna2.png" Tag="Obs3" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Image Canvas.Left="700" Canvas.Top="560" Height="352" Width="100" Source="/columna1.png" Tag="Obs3" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <!-- MEW -->
+        <Image Height="75" Width="75" x:Name="Mew" Source="/mew.png" Canvas.Top="365" Canvas.Left="20"/>
+
+        <!-- SUELO -->
+        <Image HorizontalAlignment="Left" Height="173" VerticalAlignment="Top" Width="1330"
+               x:Name="Suelo" Source="/ground.png" Canvas.Left="-30" Canvas.Top="713" />
+
+        <!-- PUNTUACIONES Y TAL -->
+        <Rectangle HorizontalAlignment="Left" Height="1000" Fill="#FFFFFCE9" VerticalAlignment="Top" Width="600" Canvas.Left="1000" Canvas.Top="-58"/>
+        <!-- VOLVER ATRÁS -->
+        <Button HorizontalAlignment="Left" Margin="1480,28,0,0" VerticalAlignment="Top" Height="40" Width="40" Style="{StaticResource goBack}"
+                Click="Volver_a_menu">
+            <StackPanel Orientation="Horizontal">
+                <Image HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="/goback.png"/>
+            </StackPanel>
+        </Button>
+
+        <Label Foreground="Orange" Content="Puntuación" Canvas.Left="1190" Canvas.Top="131" FontSize="30"/>
+        <Rectangle Fill="Orange" Width="226" Height="5" Canvas.Left="1190" Canvas.Top="180"/>
+        <Label Foreground="#22B3F0" x:Name="Puntuacion" Canvas.Left="1247" Canvas.Top="190" FontSize="80" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Text="Para mover a Mew usa la barra espaciadora."
+               Canvas.Left="1119" Canvas.Top="491" HorizontalAlignment="Left" VerticalAlignment="Top" Height="56" Width="366"
+                   TextAlignment="Justify" TextWrapping="Wrap" FontSize="20" Foreground="Orange"/>
+        <TextBlock Text="Pierdes cuando toques el suelo, el cielo o alguno de los pokeballs. Cuando pierdas, para reiniciar el juego, pulsa la tecla R."
+               Canvas.Left="1115" Canvas.Top="552" HorizontalAlignment="Left" Height="143" VerticalAlignment="Top" Width="365"
+                   TextAlignment="Justify" TextWrapping="Wrap" FontSize="20" Foreground="Orange"/>
+        <Label Canvas.Left="1133" Canvas.Top="403" FontSize="40" Content="Instrucciones" Foreground="Orange"/>
+
+
+
+    </Canvas>
 </Window>

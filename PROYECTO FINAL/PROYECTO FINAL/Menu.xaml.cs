@@ -51,15 +51,6 @@ namespace PROYECTO_FINAL
                 MaxWidth = SystemParameters.MaximizedPrimaryScreenWidth;
             }
         }
-        private void Exit(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Minimize(object sender, RoutedEventArgs e)
-        {
-            this.WindowState = WindowState.Minimized;
-        }
 
         private void Preview_tictactoe(object sender, RoutedEventArgs e)
         {
@@ -82,10 +73,10 @@ namespace PROYECTO_FINAL
             this.Close();
         }
 
-        private void Abrir_perfil(object sender, MouseButtonEventArgs e)
+        private void Cerrar_perfil(object sender, MouseButtonEventArgs e)
         {
-            perfil perfil = new perfil();
-            perfil.Show();
+            Principal main = new Principal();
+            main.Show();
             this.Close();
         }
 
@@ -96,12 +87,6 @@ namespace PROYECTO_FINAL
             this.Close();
         }
 
-        private void Abrir_favoritos(object sender, MouseButtonEventArgs e)
-        {
-            favoritos favoritos = new favoritos();
-            favoritos.Show();
-            this.Close();
-        }
 
         private void Abrir_ajustes(object sender, MouseButtonEventArgs e)
         {
@@ -118,14 +103,12 @@ namespace PROYECTO_FINAL
             {
                 perfil_tooltip.Visibility = Visibility.Collapsed;
                 juegos_tooltip.Visibility = Visibility.Collapsed;
-                favoritos_tooltip.Visibility = Visibility.Collapsed;
                 ajustes_tooltip.Visibility = Visibility.Collapsed;
             }
             else
             {
                 perfil_tooltip.Visibility = Visibility.Visible;
                 juegos_tooltip.Visibility = Visibility.Visible;
-                favoritos_tooltip.Visibility = Visibility.Visible;
                 ajustes_tooltip.Visibility = Visibility.Visible;
             }
         }

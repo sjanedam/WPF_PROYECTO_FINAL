@@ -10,21 +10,35 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="columna1.png" />
+    <None Remove="columna2.png" />
     <None Remove="favorito.png" />
     <None Remove="flappymew.png" />
     <None Remove="goback.png" />
+    <None Remove="ground.png" />
     <None Remove="logo.png" />
     <None Remove="maximize.png" />
     <None Remove="media\account.png" />
+    <None Remove="media\aje.png" />
+    <None Remove="media\bd.png" />
+    <None Remove="media\bm.png" />
     <None Remove="media\exit.png" />
     <None Remove="media\favorite.png" />
     <None Remove="media\flappymew.png" />
     <None Remove="media\menu.png" />
     <None Remove="media\minimize.png" />
+    <None Remove="media\pc.png" />
     <None Remove="media\settings.png" />
     <None Remove="media\tresenraya.png" />
+    <None Remove="media\tt.png" />
+    <None Remove="media\video1.mp4" />
+    <None Remove="media\video2.mp4" />
+    <None Remove="media\video3.mp4" />
     <None Remove="media\widgets.png" />
     <None Remove="media\wordle.png" />
+    <None Remove="mew.png" />
+    <None Remove="nubes.png" />
+    <None Remove="suelo.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,14 +57,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="columna1.png" />
+    <Resource Include="columna2.png" />
     <Resource Include="favorito.png" />
     <Resource Include="flappymew.png" />
     <Resource Include="goback.png" />
+    <Resource Include="ground.png" />
     <Resource Include="logo.png" />
     <Resource Include="maximize.png" />
     <Resource Include="media\account.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="media\aje.png" />
+    <Resource Include="media\bd.png" />
+    <Resource Include="media\bm.png" />
     <Resource Include="media\exit.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -66,18 +86,26 @@
     <Resource Include="media\minimize.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="media\pc.png" />
     <Resource Include="media\settings.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="media\tresenraya.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="media\tt.png" />
+    <Resource Include="media\video1.mp4" />
+    <Resource Include="media\video2.mp4" />
+    <Resource Include="media\video3.mp4" />
     <Resource Include="media\widgets.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="media\wordle.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="mew.png" />
+    <Resource Include="nubes.png" />
+    <Resource Include="suelo.png" />
   </ItemGroup>
 
 </Project>

@@ -156,6 +156,49 @@ namespace PROYECTO_FINAL
                 return datos;
             }
         }
-        
+
+        // Comprobar juego
+        public String Nombres(int id)
+        {
+            conn = null;
+            comando = null;
+            reader = null;
+            String nombre = "";
+
+            try
+            {
+                string sql = "SELECT nombre FROM juego WHERE id = " + id + ";";
+
+                conn = new MySqlConnection(conexion);
+                comando = new MySqlCommand(sql, conn);
+
+                conn.Open();
+
+                reader = comando.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        nombre = reader.GetString("nombre");
+                        return nombre;
+                    }
+
+                    reader.Close();
+                    conn.Close();
+                    return nombre;
+                }
+                else {
+                    return nombre;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return nombre;
+            }
+        }
+
     }
 }

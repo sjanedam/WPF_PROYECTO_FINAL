@@ -53,16 +53,6 @@ namespace PROYECTO_FINAL
             this.Close();
         }
 
-        private void Exit(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Minimize(object sender, RoutedEventArgs e)
-        {
-            this.WindowState = WindowState.Minimized;
-        }
-
         private void Volver_a_menu(object sender, RoutedEventArgs e)
         {
             Menu menu = new Menu();
