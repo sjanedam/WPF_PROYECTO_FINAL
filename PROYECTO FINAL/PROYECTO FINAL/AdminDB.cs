@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,9 +62,6 @@ namespace PROYECTO_FINAL
 
                 if (reader.HasRows)
                 {
-                    String a = reader.HasRows.ToString();
-                    MessageBox.Show(a);
-
                     reader.Close();
                     conn.Close();
                     return true;
@@ -157,6 +155,48 @@ namespace PROYECTO_FINAL
             }
         }
 
+        public int id(String nombre)
+        {
+            conn = null;
+            comando = null;
+            reader = null;
+
+            int id = 0;
+
+            try
+            {
+                string sql = "SELECT * FROM juego where nombre = '" + nombre + "';";
+
+                conn = new MySqlConnection(conexion);
+                comando = new MySqlCommand(sql, conn);
+
+                conn.Open();
+
+                reader = comando.ExecuteReader();
+                reader.Read();
+
+                if (reader.HasRows)
+                {
+                    id = reader.GetInt16("id");
+
+                    reader.Close();
+                    conn.Close();
+                    return id;
+                }
+                else
+                {
+                    reader.Close();
+                    conn.Close();
+                    return id;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return id;
+            }
+        }
+
         // Comprobar juego
         public String Nombres(int id)
         {
@@ -197,6 +237,36 @@ namespace PROYECTO_FINAL
             {
                 MessageBox.Show(ex.Message);
                 return nombre;
+            }
+        }
+
+        // Insertamos en la bbdd
+        public Boolean Insertar_puntos(double puntos, int id_juego, int id_usuario)
+        {
+            conn = null;
+            comando = null;
+            reader = null;
+
+            try
+            {
+                string sql = "INSERT INTO puntuacion(puntuacion, id_juego, id_usuario) VALUES ('" + puntos + "', '" + id_juego + "', '" + id_usuario + "');";
+
+                conn = new MySqlConnection(conexion);
+                comando = new MySqlCommand(sql, conn);
+
+                conn.Open();
+
+                reader = comando.ExecuteReader();
+                
+
+                reader.Close();
+                conn.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
             }
         }
 

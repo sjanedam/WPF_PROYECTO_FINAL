@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace PROYECTO_FINAL
 {
@@ -576,6 +577,11 @@ namespace PROYECTO_FINAL
                 btn.Background = Brushes.Orange;
                 btn.IsEnabled = true;
             }
+
+            AdminDB admin = new AdminDB();
+            int id = admin.id("Wordle");
+            admin.Insertar_puntos(puntuacion, id, 8);
+
         }
     }
 }

@@ -39,6 +39,9 @@
     <None Remove="mew.png" />
     <None Remove="nubes.png" />
     <None Remove="suelo.png" />
+    <None Remove="tresenraya.png" />
+    <None Remove="video1.mp4" />
+    <None Remove="wordle.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -94,9 +97,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="media\tt.png" />
-    <Resource Include="media\video1.mp4" />
-    <Resource Include="media\video2.mp4" />
-    <Resource Include="media\video3.mp4" />
+    <EmbeddedResource Include="media\video1.mp4" />
+    <EmbeddedResource Include="media\video2.mp4" />
+    <EmbeddedResource Include="media\video3.mp4" />
     <Resource Include="media\widgets.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -106,6 +109,9 @@
     <Resource Include="mew.png" />
     <Resource Include="nubes.png" />
     <Resource Include="suelo.png" />
+    <Resource Include="tresenraya.png" />
+    <Resource Include="video1.mp4" />
+    <Resource Include="wordle.png" />
   </ItemGroup>
 
 </Project>

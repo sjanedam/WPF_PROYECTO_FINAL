@@ -1,0 +1,28 @@
+C:\Users\Jane\Videos\Aplicacion\PROYECTO FINAL.exe
+C:\Users\Jane\Videos\Aplicacion\media\loading.gif
+C:\Users\Jane\Videos\Aplicacion\PROYECTO FINAL.dll
+C:\Users\Jane\Videos\Aplicacion\PROYECTO FINAL.deps.json
+C:\Users\Jane\Videos\Aplicacion\PROYECTO FINAL.runtimeconfig.json
+C:\Users\Jane\Videos\Aplicacion\PROYECTO FINAL.pdb
+C:\Users\Jane\Videos\Aplicacion\Google.Protobuf.dll
+C:\Users\Jane\Videos\Aplicacion\K4os.Compression.LZ4.dll
+C:\Users\Jane\Videos\Aplicacion\K4os.Compression.LZ4.Streams.dll
+C:\Users\Jane\Videos\Aplicacion\K4os.Hash.xxHash.dll
+C:\Users\Jane\Videos\Aplicacion\MySql.Data.dll
+C:\Users\Jane\Videos\Aplicacion\BouncyCastle.Crypto.dll
+C:\Users\Jane\Videos\Aplicacion\System.Data.Odbc.dll
+C:\Users\Jane\Videos\Aplicacion\System.IO.Pipelines.dll
+C:\Users\Jane\Videos\Aplicacion\System.Text.Encoding.CodePages.dll
+C:\Users\Jane\Videos\Aplicacion\System.Text.Encodings.Web.dll
+C:\Users\Jane\Videos\Aplicacion\System.Text.Json.dll
+C:\Users\Jane\Videos\Aplicacion\runtimes\win-x64\native\comerr64.dll
+C:\Users\Jane\Videos\Aplicacion\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Jane\Videos\Aplicacion\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Jane\Videos\Aplicacion\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Jane\Videos\Aplicacion\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Jane\Videos\Aplicacion\runtimes\freebsd\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Jane\Videos\Aplicacion\runtimes\linux\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Jane\Videos\Aplicacion\runtimes\osx\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Jane\Videos\Aplicacion\runtimes\win\lib\net6.0\System.Data.Odbc.dll
+C:\Users\Jane\Videos\Aplicacion\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\Jane\Videos\Aplicacion\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

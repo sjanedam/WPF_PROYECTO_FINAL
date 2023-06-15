@@ -23,7 +23,7 @@ namespace PROYECTO_FINAL
     {
         DispatcherTimer timerJuego = new DispatcherTimer();
 
-        double score;
+        int score;
         int gravedad = 8;
         bool gameOver;
         Rect MewHitBox;
@@ -64,7 +64,7 @@ namespace PROYECTO_FINAL
                     if (Canvas.GetLeft(x) < -100)
                     {
                         Canvas.SetLeft(x, 850);
-                        score += .5;
+                        score += 5;
                     }
 
                     Rect obsHitBox = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
@@ -149,6 +149,10 @@ namespace PROYECTO_FINAL
             timerJuego.Stop();
             gameOver = true;
             MessageBox.Show("Pulsa R para empezar de nuevo", "Game Over");
+
+            AdminDB admin = new AdminDB();
+            int id = admin.id("Flappy Mew");
+            admin.Insertar_puntos(score, id, 8);
         }
 
         private void Volver_a_menu(object sender, RoutedEventArgs e)
